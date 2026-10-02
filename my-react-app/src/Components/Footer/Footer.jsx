@@ -43,7 +43,7 @@ function Footer() {
                             </strong>
 
                             <span>
-                                134 S Street, Windham, NY 12496
+                                520 Skyway Boulevard, Albany, NY 12207
                             </span>
 
                         </div>
@@ -72,7 +72,7 @@ function Footer() {
                             </strong>
 
                             <span>
-                                31 Scandinavian Dr Windham, NY 12496
+                                86 Traveler Lane, Albany, NY 12207
                             </span>
 
                         </div>

@@ -276,11 +276,11 @@ function ContactUs() {
                                         Corporate Office:
                                     </strong>
                                     <p className="contact-detail-text">
-                                        134 S Street,
+                                        520 Skyway Boulevard
                                         <br />
-                                        Windham,
+                                        Albany,
                                         <br />
-                                        NY 12496
+                                        NY 12207
                                     </p>
                                 </div>
 
@@ -289,11 +289,11 @@ function ContactUs() {
                                         Registered Office:
                                     </strong>
                                     <p className="contact-detail-text">
-                                        31 Scandinavian Dr
+                                        86 Traveler Lane
                                         <br />
-                                        Windham,
+                                        Albany,
                                         <br />
-                                        NY 12496
+                                        NY 12207
                                     </p>
                                 </div>
                             </div>
@@ -338,9 +338,8 @@ function ContactUs() {
                                             onChange={handleChange}
                                             placeholder="Please enter..."
                                             autoComplete="name"
-                                            className={`contact-form-input ${
-                                                errors.name ? "input-error" : ""
-                                            }`}
+                                            className={`contact-form-input ${errors.name ? "input-error" : ""
+                                                }`}
                                         />
                                         {errors.name && (
                                             <span className="validation-error">
@@ -360,9 +359,8 @@ function ContactUs() {
                                             onChange={handleChange}
                                             placeholder="Please enter..."
                                             autoComplete="email"
-                                            className={`contact-form-input ${
-                                                errors.email ? "input-error" : ""
-                                            }`}
+                                            className={`contact-form-input ${errors.email ? "input-error" : ""
+                                                }`}
                                         />
                                         {errors.email && (
                                             <span className="validation-error">
@@ -381,9 +379,8 @@ function ContactUs() {
                                             Phone Number*
                                         </label>
                                         <div
-                                            className={`contact-phone-wrapper ${
-                                                errors.phone ? "input-error" : ""
-                                            }`}
+                                            className={`contact-phone-wrapper ${errors.phone ? "input-error" : ""
+                                                }`}
                                         >
                                             <PhoneInput
                                                 countryCode={formData.countryCode || "+1"}
@@ -419,9 +416,8 @@ function ContactUs() {
                                             value={formData.subject}
                                             onChange={handleChange}
                                             placeholder="Please enter..."
-                                            className={`contact-form-input ${
-                                                errors.subject ? "input-error" : ""
-                                            }`}
+                                            className={`contact-form-input ${errors.subject ? "input-error" : ""
+                                                }`}
                                         />
                                         {errors.subject && (
                                             <span className="validation-error">
@@ -444,9 +440,8 @@ function ContactUs() {
                                         onChange={handleChange}
                                         placeholder="Write message here"
                                         rows="4"
-                                        className={`contact-form-textarea ${
-                                            errors.message ? "input-error" : ""
-                                        }`}
+                                        className={`contact-form-textarea ${errors.message ? "input-error" : ""
+                                            }`}
                                     />
                                     {errors.message && (
                                         <span className="validation-error">
@@ -459,9 +454,8 @@ function ContactUs() {
                                     AGREEMENT CHECKBOX
                                 ========================= */}
                                 <div
-                                    className={`agreement-wrapper ${
-                                        errors.agreement ? "agreement-error" : ""
-                                    }`}
+                                    className={`agreement-wrapper ${errors.agreement ? "agreement-error" : ""
+                                        }`}
                                 >
                                     <div className="agreement-row">
                                         <input
