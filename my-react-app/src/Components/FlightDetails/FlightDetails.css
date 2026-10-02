@@ -1,0 +1,1109 @@
+/* =========================================================
+   FLIGHT DETAILS PAGE STYLES
+   GLASSMORPHISM + DROPDOWN FIX
+========================================================= */
+
+.flight-details-page {
+    min-height: 100vh;
+    padding: 110px 20px 80px;
+    position: relative;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.flight-details-container {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   TOP STEPPER BAR
+========================================================= */
+
+.details-stepper-wrapper {
+    width: 100%;
+    max-width: 100%;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    border-radius: 14px;
+    padding: 14px 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+    box-sizing: border-box;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 5;
+}
+
+.details-stepper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.stepper-step {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #1e293b;
+    white-space: nowrap;
+}
+
+.step-circle {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12.5px;
+    font-weight: 800;
+    background: rgba(255, 255, 255, 0.6);
+    color: #334155;
+    border: 1.5px solid rgba(255, 255, 255, 0.8);
+}
+
+.stepper-step.completed .step-circle {
+    background: #d97706;
+    color: #ffffff;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
+    border-color: #d97706;
+}
+
+.stepper-step.completed .step-label {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.stepper-step.active .step-circle {
+    background: #0f172a;
+    color: #ffffff;
+    border: 2px solid #d97706;
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.25);
+}
+
+.stepper-step.active .step-label {
+    color: #0f172a;
+    font-weight: 800;
+}
+
+.stepper-line {
+    width: 60px;
+    height: 1.5px;
+    background: rgba(203, 213, 225, 0.8);
+}
+
+.stepper-line.completed-line {
+    background: #d97706;
+}
+
+
+/* =========================================================
+   HORIZONTAL FLIGHT SUMMARY
+========================================================= */
+
+.horizontal-flight-summary-strip {
+    background: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    border-radius: 16px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 4;
+}
+
+.summary-left-flights {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.summary-segment {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.segment-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flight-tag-badge {
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #92400e;
+    background: rgba(254, 243, 199, 0.85);
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(253, 230, 138, 0.9);
+    text-transform: uppercase;
+}
+
+.return-tag-badge {
+    color: #0369a1;
+    background: rgba(224, 242, 254, 0.85);
+    border-color: rgba(186, 230, 253, 0.9);
+}
+
+.summary-change-btn {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(203, 213, 225, 0.9);
+    color: #334155;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.segment-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.segment-airline {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.segment-route {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.route-arrow {
+    color: #d97706;
+    font-size: 16px;
+}
+
+.segment-time-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #334155;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.segment-fare-tier {
+    background: rgba(236, 253, 245, 0.85);
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 1px 8px;
+    border-radius: 12px;
+}
+
+
+/* =========================================================
+   RIGHT SUMMARY ACTIONS
+========================================================= */
+
+.summary-right-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.applied-offer-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(236, 253, 245, 0.9);
+    border: 1.5px solid #6ee7b7;
+    border-radius: 50px;
+    padding: 5px 12px 5px 10px;
+}
+
+.offer-pill-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #065f46;
+}
+
+.offer-pill-check {
+    background: #10b981;
+    color: #ffffff;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+.offer-pill-save {
+    color: #047857;
+    font-weight: 800;
+}
+
+.offer-pill-remove {
+    background: transparent;
+    border: none;
+    color: #059669;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 0 2px;
+    font-weight: 800;
+}
+
+.view-offers-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    border: 1.5px solid #d97706;
+    color: #92400e;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 8px 18px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(217, 119, 6, 0.15);
+}
+
+.offer-btn-sparkle {
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN FORM CARD
+========================================================= */
+
+.details-form-card {
+    background: rgba(255, 255, 255, 0.48);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    border-radius: 18px;
+    padding: 26px 28px 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.09);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    /*
+      IMPORTANT:
+      Main form card is lower than dropdown layer.
+    */
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+}
+
+.form-card-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 14px;
+}
+
+.form-card-header h2 {
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 6px;
+}
+
+.form-card-sub {
+    font-size: 13.5px;
+    color: #334155;
+    margin: 0;
+    line-height: 1.45;
+}
+
+.intl-passport-alert {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0369a1;
+}
+
+.alert-dot {
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   PASSENGER + CONTACT SIDE BY SIDE
+========================================================= */
+
+.traveler-contact-side-by-side {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 18px;
+    align-items: stretch;
+
+    /*
+      IMPORTANT FOR COUNTRY DROPDOWN
+    */
+    position: relative;
+    z-index: 20;
+    overflow: visible;
+}
+
+
+/* =========================================================
+   LEFT PASSENGER COLUMN
+========================================================= */
+
+.passenger-section-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    position: relative;
+    z-index: 21;
+    overflow: visible;
+}
+
+.passengers-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    position: relative;
+    z-index: 22;
+    overflow: visible;
+}
+
+.passengers-list-wrapper .passenger-entry-box:only-child {
+    flex: 1;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   RIGHT CONTACT COLUMN
+========================================================= */
+
+.contact-and-price-column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+
+    /*
+      CONTACT DROPDOWN MUST STAY ABOVE THE PRICE BOX
+    */
+    position: relative;
+    z-index: 100;
+    overflow: visible;
+}
+
+.contact-and-price-column .passenger-entry-box {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PASSENGER BOX
+========================================================= */
+
+.passenger-entry-box {
+    background: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    border-radius: 14px;
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    /*
+      VERY IMPORTANT:
+      Dropdown must be allowed to come outside.
+    */
+    position: relative;
+    overflow: visible;
+}
+
+.passenger-box-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.passenger-icon {
+    font-size: 16px;
+}
+
+.passenger-box-title h3 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+}
+
+.contact-box-note {
+    font-size: 12px;
+    color: #475569;
+    margin: -4px 0 2px;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   INPUT GRID
+========================================================= */
+
+.details-inputs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 14px;
+
+    position: relative;
+    z-index: 150;
+    overflow: visible;
+}
+
+.contact-inputs-grid {
+    grid-template-columns: 1fr;
+
+    position: relative;
+    z-index: 200;
+    overflow: visible;
+}
+
+.custom-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+
+    position: relative;
+    overflow: visible;
+    z-index: 201;
+}
+
+.custom-form-group label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.custom-form-group input,
+.custom-form-group select {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1.5px solid rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    font-size: 13px;
+    color: #0f172a;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 202;
+}
+
+.custom-form-group input:focus,
+.custom-form-group select:focus {
+    outline: none;
+    border-color: #d97706;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.18);
+}
+
+.custom-form-group input.input-err,
+.custom-form-group select.input-err {
+    border-color: #ef4444;
+    background: rgba(254, 242, 242, 0.85);
+}
+
+.field-err-msg {
+    font-size: 11px;
+    color: #dc2626;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   COUNTRY CODE DROPDOWN
+   IMPORTANT FIX
+========================================================= */
+
+/*
+   If your country selector creates a custom dropdown,
+   give its wrapper this class if possible.
+*/
+
+.phone-country-wrapper,
+.country-code-wrapper,
+.phone-input-wrapper,
+.react-tel-input,
+.react-international-phone {
+    position: relative;
+    z-index: 1000 !important;
+    overflow: visible !important;
+}
+
+/*
+   Custom dropdown menu should always appear
+   above Price Details.
+*/
+
+.country-dropdown,
+.country-dropdown-menu,
+.phone-country-dropdown,
+.react-tel-input .country-list,
+.react-international-phone-country-selector-dropdown {
+    position: absolute;
+    z-index: 999999 !important;
+}
+
+
+/* =========================================================
+   PRICE DETAILS BOX
+   FULL WIDTH - BELOW PASSENGER + CONTACT SECTION
+========================================================= */
+
+.price-embedded-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 18px;
+
+    /*
+      Price stays below the contact/country dropdown layer.
+      It is now outside the two-column grid.
+    */
+    position: relative;
+    z-index: 1;
+}
+
+.price-breakdown-table {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.price-line-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.price-label {
+    font-weight: 600;
+}
+
+.price-val {
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.promo-savings-row {
+    color: #15803d;
+}
+
+.price-val-discount {
+    font-weight: 800;
+    color: #15803d;
+}
+
+.price-divider {
+    border: none;
+    border-top: 1px dashed rgba(203, 213, 225, 0.9);
+    margin: 6px 0;
+}
+
+.total-amount-row {
+    font-size: 14.5px;
+    margin-top: 2px;
+}
+
+.total-label {
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.total-val {
+    font-size: 19px;
+    font-weight: 900;
+    color: #0f172a;
+}
+
+.price-card-perks {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 11px;
+    color: #334155;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.form-submit-row {
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.custom-proceed-btn {
+    width: 100%;
+    height: 52px;
+    background: linear-gradient(90deg, #d97706 0%, #b45309 100%);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 14.5px;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(180, 83, 9, 0.35);
+    transition: all 0.25s ease;
+}
+
+.custom-proceed-btn:hover {
+    background: linear-gradient(90deg, #b45309 0%, #92400e 100%);
+    box-shadow: 0 8px 24px rgba(180, 83, 9, 0.45);
+    transform: translateY(-1px);
+}
+
+.custom-proceed-btn:active {
+    transform: translateY(0);
+}
+
+.btn-arrow-icon {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   OFFERS MODAL
+========================================================= */
+
+.offers-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999999;
+    padding: 40px 20px;
+}
+
+.offers-modal-container {
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 580px;
+    width: 100%;
+    max-height: 85vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 26px 28px;
+    border: 1px solid #e2e8f0;
+}
+
+.offers-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 14px;
+}
+
+.offers-header-title h3 {
+    margin: 0 0 4px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.offers-header-title p {
+    margin: 0;
+    font-size: 12.5px;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.offers-modal-close {
+    background: #f1f5f9;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #64748b;
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   PROMO INPUT
+========================================================= */
+
+.offers-promo-input-box {
+    display: flex;
+    gap: 8px;
+}
+
+.offers-promo-input-box input {
+    flex: 1;
+    height: 44px;
+    padding: 0 14px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.offers-apply-input-btn {
+    padding: 0 20px;
+    height: 44px;
+    background: #0f172a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.offers-alert {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 600;
+}
+
+.offers-alert-error {
+    background: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.offers-alert-success {
+    background: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+
+/* =========================================================
+   OFFER CARDS
+========================================================= */
+
+.offers-cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.offer-deal-card {
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px 16px;
+    background: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.offer-deal-card:hover {
+    border-color: #d97706;
+    background: #fffbeb;
+}
+
+.offer-deal-active {
+    border-color: #10b981;
+    background: #ecfdf5;
+}
+
+.offer-deal-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.offer-deal-code-wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.offer-coupon-code {
+    font-size: 13px;
+    font-weight: 800;
+    color: #0f172a;
+    background: #ffffff;
+    border: 1px dashed #94a3b8;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.offer-deal-tag {
+    font-size: 9.5px;
+    font-weight: 800;
+    color: #d97706;
+    background: #fef3c7;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.offer-deal-apply-btn {
+    background: #0f4c5c;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.offer-deal-apply-btn.btn-applied {
+    background: #10b981;
+}
+
+.offer-deal-title {
+    margin: 2px 0 0;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.offer-deal-desc {
+    margin: 0;
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.35;
+}
+
+.offer-deal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 11.5px;
+    color: #475569;
+    margin-top: 4px;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 6px;
+}
+
+.offer-min-req {
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .traveler-contact-side-by-side {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }
+
+    .passenger-section-column,
+    .contact-and-price-column,
+    .passengers-list-wrapper {
+        height: auto;
+    }
+
+    .passengers-list-wrapper .passenger-entry-box:only-child {
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .flight-details-page {
+        padding: 85px 10px 50px;
+        width: 100%;
+        max-width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .flight-details-container {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .details-inputs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .details-stepper {
+        justify-content: space-between;
+    }
+
+    .stepper-step span:not(.step-circle) {
+        display: none;
+    }
+
+    .stepper-line {
+        width: 100%;
+        min-width: 20px;
+    }
+
+    .horizontal-flight-summary-strip {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .summary-right-actions {
+        justify-content: space-between;
+    }
+
+    .details-form-card {
+        padding: 18px 12px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .traveler-contact-side-by-side {
+        gap: 14px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .price-embedded-box {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .custom-form-group {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .form-submit-row {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    .custom-proceed-btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .flight-details-page {
+        padding: 90px 12px 50px;
+    }
+
+    .details-stepper-wrapper {
+        padding: 12px 14px;
+    }
+
+    .horizontal-flight-summary-strip {
+        padding: 14px;
+    }
+
+    .details-form-card {
+        border-radius: 14px;
+        padding: 18px 12px;
+    }
+
+    .passenger-entry-box {
+        padding: 14px;
+    }
+
+}

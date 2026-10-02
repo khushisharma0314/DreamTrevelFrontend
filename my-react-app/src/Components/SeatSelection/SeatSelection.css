@@ -1,0 +1,1012 @@
+/* =========================================================
+   SEAT SELECTION PAGE
+========================================================= */
+
+.seat-selection-page {
+    min-height: 80vh;
+    background: #f8fafc;
+    padding: 110px 20px 80px;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.seat-progress-container {
+    width: 96%;
+    max-width: 1150px;
+    margin: 0 auto 28px;
+
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+
+    padding: 18px 24px;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.seat-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat-progress-step {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.seat-progress-number {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e2e8f0;
+    color: #64748b;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.seat-progress-step.completed {
+    color: #FB923C;
+}
+
+.seat-progress-step.completed .seat-progress-number {
+    background: #FB923C;
+    color: #ffffff;
+}
+
+.seat-progress-step.active {
+    color: #FB923C;
+}
+
+.seat-progress-step.active .seat-progress-number {
+    background: #FB923C;
+    color: #ffffff;
+}
+
+.seat-progress-line {
+    width: 55px;
+    height: 1px;
+
+    background: #dbe3ea;
+
+    margin: 0 10px;
+}
+
+.active-line {
+    background: #FB923C;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.seat-page-header {
+    width: 96%;
+    max-width: 1150px;
+
+    margin: 0 auto 25px;
+
+    text-align: left;
+}
+
+.seat-page-header h1 {
+    margin: 0 0 7px;
+
+    color: #0f172a;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.seat-page-header p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.seat-layout-container {
+    width: 96%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2.2fr 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+.seat-main-section {
+    min-width: 0;
+}
+
+.seat-summary-section {
+    position: sticky;
+    top: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.seat-card,
+.seat-summary-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.seat-card {
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.seat-summary-card {
+    padding: 22px;
+}
+
+.seat-card h2,
+.seat-summary-card h3 {
+    margin: 0;
+
+    color: #0f172a;
+
+    font-weight: 700;
+}
+
+.seat-card h2 {
+    font-size: 18px;
+}
+
+.seat-summary-card h3 {
+    font-size: 16px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    padding-bottom: 11px;
+
+    margin-bottom: 16px;
+}
+
+
+/* =========================================================
+   PASSENGER TABS
+========================================================= */
+
+.passenger-seat-tabs {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.passenger-seat-tab {
+    min-height: 48px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 13px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 9px;
+
+    color: #475569;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.passenger-seat-tab:hover {
+    border-color: #FB923C;
+}
+
+.passenger-seat-tab.active {
+    background: #fff7ed;
+
+    border-color: #FB923C;
+
+    color: #FB923C;
+}
+
+.tab-person-icon {
+    font-size: 16px;
+}
+
+.tab-seat-number {
+    background: #FB923C;
+
+    color: #ffffff;
+
+    padding: 3px 6px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   TRIP SWITCH
+========================================================= */
+
+.trip-seat-switch {
+    display: flex;
+
+    width: fit-content;
+
+    background: #eaf0f4;
+
+    border-radius: 9px;
+
+    padding: 4px;
+
+    margin-bottom: 20px;
+}
+
+.trip-switch {
+    border: none;
+
+    background: transparent;
+
+    padding: 9px 18px;
+
+    border-radius: 7px;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.trip-switch.active {
+    background: #ffffff;
+
+    color: #FB923C;
+
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   FLIGHT INFO
+========================================================= */
+
+.flight-seat-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.seat-flight-label {
+    display: block;
+
+    color: #FB923C;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    margin-bottom: 5px;
+}
+
+.flight-seat-info h3 {
+    margin: 0;
+
+    color: #1e293b;
+
+    font-size: 15px;
+}
+
+.seat-route-info {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #0f172a;
+
+    font-size: 14px;
+}
+
+.seat-route-info span {
+    color: #FB923C;
+
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   AIRCRAFT TITLE
+========================================================= */
+
+.aircraft-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.aircraft-title p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   LEGEND
+========================================================= */
+
+.seat-legend {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    padding: 12px 14px;
+
+    background: #f8fafc;
+
+    border-radius: 9px;
+
+    margin-bottom: 25px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+
+    gap: 6px;
+
+    color: #64748b;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+.legend-seat {
+    width: 17px;
+    height: 17px;
+
+    border-radius: 4px;
+
+    display: inline-block;
+
+    border: 1px solid #cbd5e1;
+
+    background: #ffffff;
+}
+
+.legend-seat.selected {
+    background: #FB923C;
+
+    border-color: #FB923C;
+}
+
+.legend-seat.occupied {
+    background: #cbd5e1;
+
+    border-color: #cbd5e1;
+}
+
+.legend-seat.extra {
+    background: #fff7ed;
+
+    border-color: #f97316;
+}
+
+
+/* =========================================================
+   AIRCRAFT
+========================================================= */
+
+.aircraft-wrapper {
+    display: flex;
+
+    justify-content: center;
+
+    overflow-x: auto;
+
+    padding: 5px 0 15px;
+}
+
+.aircraft-body {
+    width: 340px;
+
+    min-width: 340px;
+
+    background: #f8fafc;
+
+    border: 2px solid #dbe3ea;
+
+    border-radius: 170px 170px 35px 35px;
+
+    padding: 25px 25px 20px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   COCKPIT
+========================================================= */
+
+.cockpit {
+    height: 65px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    border-bottom: 1px solid #dbe3ea;
+
+    margin-bottom: 15px;
+}
+
+.cockpit-window {
+    width: 100px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #dceff6;
+
+    border: 1px solid #b9dce9;
+}
+
+.cockpit span,
+.aircraft-back span {
+    font-size: 8px;
+
+    color: #94a3b8;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SEAT MAP
+========================================================= */
+
+.seat-map {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.seat-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+}
+
+.row-number {
+    width: 18px;
+
+    color: #94a3b8;
+
+    font-size: 9px;
+
+    text-align: center;
+
+    margin-right: 2px;
+}
+
+.seat-group {
+    display: flex;
+
+    gap: 5px;
+}
+
+.seat-aisle {
+    width: 18px;
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   SEATS
+========================================================= */
+
+.aircraft-seat {
+    width: 32px;
+    height: 31px;
+
+    border-radius: 6px 6px 4px 4px;
+
+    border: 1px solid #cbd5e1;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        border 0.15s ease;
+}
+
+.aircraft-seat:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    border-color: #FB923C;
+
+    background: #fff7ed;
+}
+
+.aircraft-seat.seat-selected {
+    background: #FB923C;
+
+    border-color: #FB923C;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 3px 8px rgba(251, 146, 60, 0.30);
+}
+
+.aircraft-seat.seat-occupied {
+    background: #cbd5e1;
+
+    border-color: #cbd5e1;
+
+    color: #94a3b8;
+
+    cursor: not-allowed;
+}
+
+.aircraft-seat.seat-extra:not(.seat-occupied):not(.seat-selected) {
+    background: #fff7ed;
+
+    border-color: #f97316;
+
+    color: #c2410c;
+}
+
+
+/* =========================================================
+   AIRCRAFT BACK
+========================================================= */
+
+.aircraft-back {
+    height: 45px;
+
+    margin-top: 15px;
+
+    border-top: 1px solid #dbe3ea;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =========================================================
+   SELECTED SEAT SUMMARY
+========================================================= */
+
+.selected-passenger-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 12px;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.selected-passenger-row:last-child {
+    border-bottom: none;
+}
+
+.selected-passenger-row strong {
+    display: block;
+
+    color: #1e293b;
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+.selected-passenger-row span {
+    color: #64748b;
+
+    font-size: 10px;
+}
+
+.mini-seat-price {
+    color: #FB923C !important;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   PRICE SUMMARY
+========================================================= */
+
+.seat-price-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 12px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+.seat-summary-card hr {
+    border: none;
+
+    border-top: 1px solid #f1f5f9;
+
+    margin: 15px 0;
+}
+
+.seat-total-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #0f172a;
+
+    font-size: 14px;
+}
+
+.seat-total-row strong {
+    color: #FB923C;
+
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   CONTINUE BUTTON
+========================================================= */
+
+.continue-addons-btn {
+    width: 100%;
+
+    height: 54px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    background: #f97316;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(249, 115, 22, 0.30);
+
+    transition: 0.2s ease;
+}
+
+.continue-addons-btn:hover {
+    background: #ea580c;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 20px rgba(249, 115, 22, 0.40);
+}
+
+.continue-addons-btn span {
+    font-size: 20px;
+}
+
+.seat-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skip-seats-btn {
+    width: 100%;
+    height: 44px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #475569;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.skip-seats-btn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+.back-review-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: transparent;
+    color: #FB923C;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.back-review-btn:hover {
+    text-decoration: underline;
+    color: #ea580c;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.seat-error-card {
+    max-width: 500px;
+
+    margin: 70px auto;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.seat-error-card h2 {
+    margin: 0 0 10px;
+
+    color: #ef4444;
+}
+
+.seat-error-card p {
+    margin-bottom: 24px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.seat-error-card button {
+    height: 48px;
+
+    padding: 0 30px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #FB923C;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.seat-error-card button:hover {
+    background: #ea580c;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .seat-progress-container {
+        overflow-x: auto;
+    }
+
+    .seat-progress {
+        min-width: 720px;
+
+        justify-content: flex-start;
+    }
+
+    .seat-layout-container {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .seat-summary-section {
+        position: static;
+    }
+
+    .seat-page-header {
+        width: 100%;
+    }
+
+    .seat-card {
+        padding: 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .seat-selection-page {
+        padding: 20px 10px 50px;
+    }
+
+    .seat-progress-container {
+        width: 100%;
+
+        padding: 14px 16px;
+    }
+
+    .seat-page-header h1 {
+        font-size: 22px;
+    }
+
+    .seat-page-header p {
+        font-size: 13px;
+    }
+
+    .flight-seat-info {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .passenger-seat-tabs {
+        flex-direction: column;
+    }
+
+    .passenger-seat-tab {
+        width: 100%;
+    }
+
+    .aircraft-body {
+        width: 315px;
+
+        min-width: 315px;
+
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .aircraft-seat {
+        width: 28px;
+        height: 29px;
+    }
+
+    .seat-row {
+        gap: 5px;
+    }
+
+    .seat-group {
+        gap: 4px;
+    }
+
+    .seat-aisle {
+        width: 13px;
+    }
+
+    .seat-legend {
+        gap: 10px;
+    }
+}

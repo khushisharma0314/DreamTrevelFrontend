@@ -1,0 +1,571 @@
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.fare-disclosure-page {
+    width: 100%;
+    background: #ffffff;
+    color: #1F2937;
+
+    font-family: Roboto, sans-serif;
+
+    padding-top: 0;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.fare-disclosure-heading-section {
+    width: 100%;
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 24px 34px 0;
+}
+
+.fare-disclosure-heading-section h1 {
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+    font-size: 27px;
+    line-height: 1.3;
+
+    /* Heading ko thoda lighter rakha hai */
+    font-weight: 550;
+
+    color: #1F2937;
+
+    text-decoration: none;
+
+    /* Characters ke beech halka spacing */
+    letter-spacing: 0.15px;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.fare-disclosure-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 14px;
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #1F2937;
+}
+
+.fare-disclosure-breadcrumb a {
+    color: #1F2937;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.fare-disclosure-breadcrumb a:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.fare-disclosure-breadcrumb span {
+    color: #555555;
+}
+
+.fare-disclosure-breadcrumb span:last-child {
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.fare-disclosure-content {
+    width: 100%;
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 18px 34px 55px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #1F2937;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ALL PARAGRAPHS
+========================================================= */
+
+.fare-disclosure-content p {
+    margin: 0 0 12px;
+
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   EFFECTIVE DATE
+========================================================= */
+
+.fare-disclosure-effective-date {
+    margin: 0 0 12px !important;
+
+    font-weight: 400 !important;
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   CONTENT SECTIONS
+========================================================= */
+
+.fare-disclosure-section {
+    margin-top: 30px;
+}
+
+.fare-disclosure-section+.fare-disclosure-section {
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   MAIN SECTION HEADINGS
+========================================================= */
+
+.fare-disclosure-section h2 {
+    margin: 0 0 14px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 20px;
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    color: #1F2937;
+
+    text-decoration: none;
+
+    letter-spacing: 0.1px;
+}
+
+
+/* =========================================================
+   PARAGRAPH AFTER HEADING
+========================================================= */
+
+.fare-disclosure-section h2+p {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.fare-disclosure-section ul {
+    margin: 6px 0 13px;
+
+    padding-left: 23px;
+
+    font-family: Roboto, sans-serif;
+}
+
+.fare-disclosure-section li {
+    margin-bottom: 4px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.fare-disclosure-contact {
+    margin-top: 30px;
+}
+
+.fare-disclosure-contact h2 {
+    margin-bottom: 14px;
+}
+
+
+/*
+   Contact ke andar unnecessary large gaps nahi honge.
+   Har line normal paragraph spacing ke saath rahegi.
+*/
+
+.fare-disclosure-contact p {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* FareNexa */
+.fare-disclosure-contact .fare-disclosure-company {
+    margin: 0 0 6px;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* Corporate / Registered etc. */
+.fare-disclosure-contact strong {
+    font-weight: 600;
+}
+
+
+/* Final contact paragraph */
+.fare-disclosure-contact .fare-disclosure-final-text {
+    margin-top: 8px;
+    margin-bottom: 0;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   MEDIUM / TABLET
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .fare-disclosure-page {
+        padding-top: 0;
+    }
+
+
+    .fare-disclosure-heading-section {
+        max-width: 100%;
+
+        padding: 20px 34px 0;
+    }
+
+
+    .fare-disclosure-heading-section h1 {
+        font-size: 25px;
+        font-weight: 550;
+        letter-spacing: 0.15px;
+    }
+
+
+    .fare-disclosure-content {
+        max-width: 100%;
+
+        padding: 16px 34px 45px;
+
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+
+    .fare-disclosure-content p {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+
+    .fare-disclosure-section {
+        margin-top: 28px;
+    }
+
+    .fare-disclosure-section+.fare-disclosure-section {
+        margin-top: 28px;
+    }
+
+
+    .fare-disclosure-section h2 {
+        margin-bottom: 13px;
+
+        font-size: 19px;
+        line-height: 1.4;
+
+        font-weight: 600;
+    }
+
+
+    .fare-disclosure-section li {
+        font-size: 14.5px;
+        line-height: 1.65;
+    }
+
+
+    .fare-disclosure-contact p {
+        font-size: 14.5px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .fare-disclosure-page {
+        padding-top: 0;
+    }
+
+
+    .fare-disclosure-heading-section {
+        max-width: 100%;
+
+        padding: 18px 24px 0;
+    }
+
+
+    .fare-disclosure-heading-section h1 {
+        font-size: 23px;
+        font-weight: 550;
+
+        letter-spacing: 0.1px;
+    }
+
+
+    .fare-disclosure-breadcrumb {
+        margin-top: 11px;
+        padding-bottom: 11px;
+
+        font-size: 12px;
+
+        gap: 6px;
+    }
+
+
+    .fare-disclosure-content {
+        max-width: 100%;
+
+        padding: 15px 24px 40px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+
+    .fare-disclosure-content p {
+        font-size: 14px;
+        line-height: 1.65;
+
+        margin-bottom: 10px;
+    }
+
+
+    .fare-disclosure-section {
+        margin-top: 25px;
+    }
+
+    .fare-disclosure-section+.fare-disclosure-section {
+        margin-top: 25px;
+    }
+
+
+    .fare-disclosure-section h2 {
+        margin-bottom: 12px;
+
+        font-size: 18px;
+        line-height: 1.4;
+
+        font-weight: 600;
+    }
+
+
+    .fare-disclosure-section ul {
+        margin-top: 5px;
+        margin-bottom: 11px;
+
+        padding-left: 21px;
+    }
+
+
+    .fare-disclosure-section li {
+        font-size: 14px;
+        line-height: 1.6;
+
+        margin-bottom: 3px;
+    }
+
+
+    .fare-disclosure-contact {
+        margin-top: 25px;
+    }
+
+
+    .fare-disclosure-contact h2 {
+        margin-bottom: 12px;
+    }
+
+
+    .fare-disclosure-contact p {
+        font-size: 14px;
+        line-height: 1.55;
+
+        margin-bottom: 5px;
+    }
+
+
+    .fare-disclosure-contact .fare-disclosure-company {
+        margin-bottom: 5px;
+    }
+
+
+    .fare-disclosure-contact .fare-disclosure-final-text {
+        margin-top: 7px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .fare-disclosure-page {
+        padding-top: 0;
+    }
+
+
+    .fare-disclosure-heading-section {
+        max-width: 100%;
+
+        padding: 16px 20px 0;
+    }
+
+
+    .fare-disclosure-heading-section h1 {
+        font-size: 21px;
+        font-weight: 550;
+
+        letter-spacing: 0.1px;
+    }
+
+
+    .fare-disclosure-breadcrumb {
+        font-size: 11.5px;
+
+        gap: 5px;
+
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .fare-disclosure-content {
+        max-width: 100%;
+
+        padding: 14px 20px 35px;
+
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+
+    .fare-disclosure-content p {
+        font-size: 13.5px;
+        line-height: 1.6;
+
+        margin-bottom: 9px;
+    }
+
+
+    .fare-disclosure-section {
+        margin-top: 23px;
+    }
+
+    .fare-disclosure-section+.fare-disclosure-section {
+        margin-top: 23px;
+    }
+
+
+    .fare-disclosure-section h2 {
+        margin-bottom: 11px;
+
+        font-size: 17px;
+        line-height: 1.4;
+
+        font-weight: 600;
+
+        letter-spacing: 0.05px;
+    }
+
+
+    .fare-disclosure-section ul {
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+        padding-left: 20px;
+    }
+
+
+    .fare-disclosure-section li {
+        font-size: 13.5px;
+        line-height: 1.58;
+
+        margin-bottom: 2px;
+    }
+
+
+    .fare-disclosure-contact {
+        margin-top: 23px;
+    }
+
+
+    .fare-disclosure-contact h2 {
+        margin-bottom: 11px;
+    }
+
+
+    .fare-disclosure-contact p {
+        font-size: 13.5px;
+        line-height: 1.55;
+
+        margin-bottom: 4px;
+    }
+
+
+    .fare-disclosure-contact .fare-disclosure-company {
+        margin-bottom: 4px;
+    }
+
+
+    .fare-disclosure-contact .fare-disclosure-final-text {
+        margin-top: 6px;
+    }
+}

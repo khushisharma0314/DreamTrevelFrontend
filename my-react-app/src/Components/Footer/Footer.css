@@ -1,0 +1,405 @@
+/* =========================================================
+   FOOTER SECTION - CHARCOAL GREY & CORAL PEACH
+========================================================= */
+
+.footer-section {
+    width: 100%;
+    background: #1F2937;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 55px 0 0;
+    overflow: hidden;
+    border-top: 4px solid #FB923C;
+}
+
+
+/* =========================================================
+   MAIN FOOTER CONTAINER
+========================================================= */
+
+.footer-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 55px;
+
+    display: grid;
+    grid-template-columns: 1.55fr 1fr 1fr;
+    column-gap: 70px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEFT COLUMN
+========================================================= */
+
+.footer-left {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   FOOTER LOGO
+========================================================= */
+
+.footer-logo {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    background: #ffffff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 0 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   CONTACT ITEM
+========================================================= */
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   FOOTER ICON
+========================================================= */
+
+.footer-icon {
+    width: 28px;
+    min-width: 28px;
+
+    margin-right: 10px;
+
+    color: #FB923C;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.footer-icon svg {
+    width: 20px;
+    height: 20px;
+
+    display: block;
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+========================================================= */
+
+.footer-contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.footer-contact-text strong {
+    color: #ffffff;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+
+    line-height: 1.35;
+}
+
+.footer-contact-text span {
+    color: #cbd5e1;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 14.5px;
+    font-weight: 400;
+
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   SIMPLE CONTACT
+========================================================= */
+
+.footer-simple-contact {
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.footer-simple-contact a {
+    color: #ffffff;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 15.5px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+
+/* =========================================================
+   EMAIL
+========================================================= */
+
+.footer-email-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.footer-email-link:hover {
+    color: #FB923C !important;
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+.footer-phone-link {
+    color: #FB923C !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.footer-phone-link:visited {
+    color: #FB923C !important;
+}
+
+.footer-phone-link:hover {
+    color: #ea580c !important;
+}
+
+
+/* =========================================================
+   PAYMENT IMAGE
+========================================================= */
+
+.payment-image {
+    display: block;
+
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+
+    margin-top: 14px;
+}
+
+
+/* =========================================================
+   FOOTER COLUMNS
+========================================================= */
+
+.footer-column {
+    padding-top: 0;
+}
+
+.footer-column h3 {
+    margin: 0 0 28px;
+
+    color: #ffffff;
+
+    font-family: "Plus Jakarta Sans", "Segoe UI", Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 10px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.footer-column h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 38px;
+    height: 3px;
+    background: #FB923C;
+    border-radius: 2px;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.35;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #FB923C;
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.footer-divider {
+    width: calc(100% - 110px);
+    max-width: 1285px;
+
+    height: 1px;
+
+    margin: 48px auto 0;
+
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* =========================================================
+   DISCLAIMER
+========================================================= */
+
+.footer-disclaimer {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: 0 auto;
+
+    padding: 35px 55px 0;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.footer-disclaimer p {
+    margin: 0 auto;
+
+    width: 1180px;
+    max-width: 100%;
+
+    color: #94a3b8;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-copyright {
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 0 20px 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+}
+
+.footer-copyright p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 13.5px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   RESPONSIVE QUERIES
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 769px) {
+    .footer-container {
+        padding: 0 35px;
+        grid-template-columns: 1.45fr 1fr 1fr;
+        column-gap: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        padding-top: 40px;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 18px;
+    }
+
+    .footer-disclaimer {
+        padding: 25px 20px 0;
+    }
+
+    .footer-disclaimer p {
+        width: 100%;
+        font-size: 12.5px;
+    }
+}

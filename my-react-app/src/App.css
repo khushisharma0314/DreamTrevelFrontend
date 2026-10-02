@@ -1,0 +1,235 @@
+/* =========================================================
+   APP GLOBAL STYLES - CHARCOAL GREY & CORAL PEACH THEME
+========================================================= */
+
+:root {
+  --charcoal-grey: #1F2937;
+  --charcoal-dark: #111827;
+  --coral-peach: #FB923C;
+  --coral-peach-hover: #ea580c;
+  --coral-peach-light: #fff7ed;
+  --coral-peach-tint: #ffedd5;
+  --bg-main: #DCCAB7;
+  --card-bg: #ffffff;
+  --secondary-text: #64748b;
+  --border-color: #e2e8f0;
+  --border-focus: #FB923C;
+
+  --text: #1F2937;
+  --text-h: #1F2937;
+  --text-muted: #64748b;
+  --bg: #DCCAB7;
+  --border: #e2e8f0;
+  --accent: #FB923C;
+  --accent-hover: #ea580c;
+  --accent-bg: #fff7ed;
+  --accent-border: #FB923C;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+
+  --sans: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", sans-serif;
+  --heading: "Plus Jakarta Sans", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   HTML & BODY
+========================================================= */
+
+html {
+  scroll-behavior: smooth;
+  background: #DCCAB7;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background: #DCCAB7;
+  color: #1F2937;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #DCCAB7;
+}
+
+/* =========================================================
+   PAGE BACKGROUND INHERITANCE
+   Ensures pages without their own background image
+   inherit the global background (#DCCAB7).
+========================================================= */
+
+.advertiser-page,
+.fare-disclosure-page,
+.california-page,
+.cookies-page,
+.privacy-page,
+.terms-page,
+.disclaimer-page,
+.cancellation-page,
+.about-page,
+.contact-page,
+.login-page,
+.flight-results-page,
+.seat-selection-page,
+.addons-page,
+.my-profile-page,
+.my-bookings-page,
+.account-settings-page {
+  background: transparent !important;
+}
+
+/* =========================================================
+   FIXED HEADER CONTENT OFFSET
+========================================================= */
+
+.page-content {
+  padding-top: 88px;
+}
+
+.page-content.home-page-content {
+  padding-top: 0 !important;
+}
+
+.home-hero-band {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+
+@media (max-width: 1024px) {
+  .page-content {
+    padding-top: 72px;
+  }
+
+  .page-content.home-page-content {
+    padding-top: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 72px;
+  }
+
+  .page-content.home-page-content {
+    padding-top: 72px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-content {
+    padding-top: 65px;
+  }
+
+  .page-content.home-page-content {
+    padding-top: 65px !important;
+  }
+}
+
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* =========================================================
+   HEADINGS
+========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: #1F2937;
+}
+
+h1 {
+  font-size: 48px;
+  letter-spacing: -1.2px;
+  margin: 28px 0;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 120%;
+  letter-spacing: -0.25px;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 34px;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+
+/* =========================================================
+   PARAGRAPH
+========================================================= */
+
+p {
+  margin: 0;
+  color: #64748b;
+}
+
+/* =========================================================
+   CODE / COUNTER
+========================================================= */
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: #f1f5f9;
+}

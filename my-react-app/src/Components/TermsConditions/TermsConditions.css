@@ -1,0 +1,591 @@
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.terms-page {
+    width: 100%;
+    background: #ffffff;
+    color: #1F2937;
+
+    font-family: Roboto, sans-serif;
+
+    padding-top: 0;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.terms-heading-section {
+    width: 100%;
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 24px 24px 0;
+}
+
+.terms-heading-section h1 {
+    margin: 0;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 29px;
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    letter-spacing: 0.35px;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.terms-breadcrumb {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 14px;
+    padding-bottom: 13px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #555555;
+}
+
+.terms-breadcrumb a {
+    color: #1F2937;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.terms-breadcrumb a:hover {
+    color: #FB923C;
+    text-decoration: none;
+}
+
+.terms-breadcrumb span:last-child {
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.terms-content {
+    width: 100%;
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 18px 24px 60px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   ALL PARAGRAPHS
+========================================================= */
+
+.terms-content p {
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   EFFECTIVE DATE
+========================================================= */
+
+.terms-effective-date {
+    margin: 0 0 6px !important;
+
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.terms-intro {
+    display: block;
+
+    width: 100%;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+/* Second intro paragraph comes directly
+   on the next line without blank-line gap */
+
+.terms-intro+.terms-intro {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+/* =========================================================
+   CONTENT SECTIONS
+========================================================= */
+
+.terms-section {
+    margin-top: 34px;
+}
+
+.terms-section+.terms-section {
+    margin-top: 34px;
+}
+
+
+/* =========================================================
+   MAIN HEADINGS
+========================================================= */
+
+.terms-section h2 {
+    margin: 0 0 16px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 20px;
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    letter-spacing: 0.15px;
+
+    color: #1F2937;
+
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   SECTION PARAGRAPHS
+========================================================= */
+
+.terms-section p {
+    margin: 0 0 15px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.terms-section ul {
+    margin: 5px 0 17px;
+
+    padding-left: 24px;
+}
+
+.terms-section li {
+    margin-bottom: 5px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.terms-contact {
+    margin-top: 34px;
+}
+
+.terms-contact h2 {
+    margin-bottom: 16px;
+}
+
+.terms-contact p {
+    margin: 0 0 6px;
+
+    font-family: Roboto, sans-serif;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+.terms-contact .terms-company {
+    margin: 0 0 6px;
+
+    font-size: 15px;
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+.terms-contact strong {
+    font-weight: 550;
+}
+
+
+/* =========================================================
+   TABLET / MEDIUM
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .terms-page {
+        padding-top: 0;
+    }
+
+    .terms-heading-section {
+        max-width: 100%;
+        padding: 20px 34px 0;
+    }
+
+    .terms-heading-section h1 {
+        font-size: 27px;
+        font-weight: 550;
+        letter-spacing: 0.3px;
+    }
+
+    .terms-content {
+        max-width: 100%;
+        padding: 17px 34px 50px;
+
+        font-size: 14.5px;
+    }
+
+    .terms-content p {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+    .terms-effective-date {
+        margin-bottom: 5px !important;
+        font-size: 14.5px !important;
+    }
+
+    .terms-intro {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        font-size: 14.5px !important;
+        line-height: 1.65 !important;
+    }
+
+    .terms-intro+.terms-intro {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .terms-section {
+        margin-top: 31px;
+    }
+
+    .terms-section+.terms-section {
+        margin-top: 31px;
+    }
+
+    .terms-section h2 {
+        margin-bottom: 14px;
+
+        font-size: 19px;
+        font-weight: 600;
+    }
+
+    .terms-section p {
+        font-size: 14.5px;
+        line-height: 1.7;
+    }
+
+    .terms-section li {
+        font-size: 14.5px;
+        line-height: 1.65;
+    }
+
+    .terms-contact p,
+    .terms-contact .terms-company {
+        font-size: 14.5px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .terms-page {
+        padding-top: 0;
+    }
+
+    .terms-heading-section {
+        max-width: 100%;
+        padding: 18px 24px 0;
+    }
+
+    .terms-heading-section h1 {
+        font-size: 24px;
+        font-weight: 550;
+        letter-spacing: 0.25px;
+    }
+
+    .terms-breadcrumb {
+        margin-top: 11px;
+        padding-bottom: 11px;
+
+        font-size: 12px;
+    }
+
+    .terms-content {
+        max-width: 100%;
+
+        padding: 15px 24px 42px;
+
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .terms-content p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .terms-effective-date {
+        margin-bottom: 5px !important;
+
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+    .terms-intro {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .terms-intro+.terms-intro {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .terms-section {
+        margin-top: 27px;
+    }
+
+    .terms-section+.terms-section {
+        margin-top: 27px;
+    }
+
+    .terms-section h2 {
+        margin-bottom: 13px;
+
+        font-size: 18px;
+        line-height: 1.4;
+
+        font-weight: 600;
+    }
+
+    .terms-section p {
+        font-size: 14px;
+        line-height: 1.65;
+
+        margin-bottom: 13px;
+    }
+
+    .terms-section ul {
+        margin: 5px 0 14px;
+        padding-left: 21px;
+    }
+
+    .terms-section li {
+        font-size: 14px;
+        line-height: 1.6;
+
+        margin-bottom: 4px;
+    }
+
+    .terms-contact {
+        margin-top: 28px;
+    }
+
+    .terms-contact h2 {
+        margin-bottom: 13px;
+    }
+
+    .terms-contact p,
+    .terms-contact .terms-company {
+        font-size: 14px;
+        line-height: 1.5;
+
+        margin-bottom: 5px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .terms-page {
+        padding-top: 0;
+    }
+
+    .terms-heading-section {
+        max-width: 100%;
+        padding: 16px 20px 0;
+    }
+
+    .terms-heading-section h1 {
+        font-size: 22px;
+        font-weight: 550;
+        letter-spacing: 0.2px;
+    }
+
+    .terms-breadcrumb {
+        font-size: 11.5px;
+        gap: 5px;
+    }
+
+    .terms-content {
+        max-width: 100%;
+
+        padding: 14px 20px 38px;
+
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+    .terms-content p {
+        font-size: 13.5px;
+        line-height: 1.6;
+    }
+
+    .terms-effective-date {
+        margin-bottom: 5px !important;
+
+        font-size: 13.5px !important;
+        line-height: 1.5 !important;
+    }
+
+    .terms-intro {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        font-size: 13.5px !important;
+        line-height: 1.58 !important;
+    }
+
+    .terms-intro+.terms-intro {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .terms-section {
+        margin-top: 24px;
+    }
+
+    .terms-section+.terms-section {
+        margin-top: 24px;
+    }
+
+    .terms-section h2 {
+        margin-bottom: 11px;
+
+        font-size: 17px;
+        line-height: 1.4;
+
+        font-weight: 600;
+    }
+
+    .terms-section p {
+        font-size: 13.5px;
+        line-height: 1.6;
+
+        margin-bottom: 11px;
+    }
+
+    .terms-section ul {
+        margin: 4px 0 12px;
+        padding-left: 19px;
+    }
+
+    .terms-section li {
+        font-size: 13.5px;
+        line-height: 1.55;
+
+        margin-bottom: 3px;
+    }
+
+    .terms-contact {
+        margin-top: 25px;
+    }
+
+    .terms-contact h2 {
+        margin-bottom: 11px;
+    }
+
+    .terms-contact p,
+    .terms-contact .terms-company {
+        font-size: 13.5px;
+        line-height: 1.5;
+
+        margin-bottom: 4px;
+    }
+}

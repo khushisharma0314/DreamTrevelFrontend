@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link rel="canonical" href="https://farenexa.com/">
+
+<title>Cheap Air Tickets, Flight Booking - FareNexa</title>
+<meta name="description" content="Cheap Air Tickets, Flight Booking" />
+<meta name="keywords" content="Cheap Air Tickets, Flight Booking" />
+
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Manrope:300,400,500,600,700,800,900' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,800,900' rel='stylesheet'>
+
+<link href="https://farenexa.com/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="https://farenexa.com/bootstrap/js/bootstrap.js" rel="stylesheet" type="text/css">
+
+<link href="https://farenexa.com/css/default.css" rel="stylesheet" type="text/css">
+<link href="https://farenexa.com/css/responsive.css" rel="stylesheet" type="text/css">
+<script src="https://farenexa.com/js/jquery.min.js"></script>
+
+<link rel="shortcut icon" href="https://farenexa.com/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://farenexa.com/images/favicon.ico" type="image/x-icon">
+
+<!-- Start: This code only for search engine -->
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://farenexa.com/Scripts/sessionCalc.js"></script>
+	<script src="https://farenexa.com/Scripts/jquery-ui.min.js"></script>
+	<script src="https://farenexa.com/Scripts/Search.js"></script>
+	<script src="https://farenexa.com/Scripts/Searchs.js"></script>
+	<script src="https://farenexa.com/Scripts/home.js"></script>
+	<script src="https://farenexa.com/Scripts/main.js"></script>
+	<script type="text/javascript" src="https://farenexa.com/assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="https://farenexa.com/assets/js/carousels.js"></script>
+	
+	<link href="https://farenexa.com/css/searchboxdesign.css" rel="stylesheet" type="text/css">
+
+<!-- End: This code only for search engine -->	
+	
+<!-- Header -->
+<script src="https://farenexa.com/js/classie.js"></script>
+
+<script>
+function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 60,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+				$('.top-ribon').slideUp(200);
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+					$('.top-ribon').slideDown(200);
+                }
+            }
+			
+        });
+    }
+    window.onload = init();
+//$(window).on('resize',function(){location.reload();});
+
+
+window.onscroll(function() { alert("ppp");
+    //document.getElementById("footercallingid").style.display = "block";
+	//document.getElementById("footercallingid").style.visibility = "visible";
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $( ".active-country" ).click(function() {     
+	   $('.country-listbox').toggle();
+	});
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop()>0)
+     { $('.bottom-callus').fadeIn();}
+    else
+     { $('.bottom-callus').fadeOut();}
+ });
+</script>
+
+
+
+<!--<link rel="stylesheet" href="https://farenexa.com/menu/defaultMenu.css">-->
+<link rel="stylesheet" href="https://farenexa.com/menu/nav-core.css">
+<link rel="stylesheet" href="https://farenexa.com/menu/nav-layout.css">
+
+<!--Gallery Slider-->
+<!--<link href="https://farenexa.com/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://farenexa.com/js/jquery.flexisel.js"></script>-->
+</head>
+<body>
+
+<header>
+	<div class="header">
+		<div class="fix-header">
+			<div class="logoBox"><a href="https://farenexa.com/"><img src="https://farenexa.com/images/logo.jpg" alt="Air Ticketss Bookings"></a></div>
+			<div class="rightBox">	
+			    <div class="contactBox">
+					<div class="getaquote">Get an Instant Quote</div>
+					<a href="tel:+1-888-752-6024">+1-888-752-6024</a>
+				</div>
+				<div class="menu-box"> 
+				<a href="#" class="nav-button">Menu</a>
+					<nav class="nav">
+						<ul>
+							<li><a href="https://farenexa.com/about-us" >About Us</a></li>							
+							<li><a href="https://farenexa.com/refund-policy" >Cancellation & Refund Policy</a></li>
+							<li><a href="https://farenexa.com/contact-us" >Contact Us</a></li>
+						</ul>
+					  </nav>
+				</div>
+
+				<div class="clr"></div>
+			</div>
+			<div class="clr"></div>
+		</div>
+	</div>
+</header>
+
+
+<div class="banner-panel">
+	<img src="https://farenexa.com/images/banner-img.jpg" class="fullimg">
+	<div class="banner-text-box">
+		<div class="container">
+			<div class="banner-bigtext">Compare Flights from <span>850+ Airlines</span></div>
+			<div class="banner-smltext">Find Great Deals. Book with Peace of Mind.</div>
+		</div>
+	</div>
+
+
+
+
+<section class="search-flight desktop_ticket" id="sb">
+	<div class="search-panel">
+		<div class="container" style="padding-right: 15px;padding-left: 15px;">
+		
+		 <form class="form-inline" action='https://farenexa.com/apiv1/searchapifind.php' method="get">
+			<div class="search-fly">
+				<div class="form_sec">
+					<div class="form-group">
+						<select class="form-control" name="triptype" id="FormControlSelect1">
+							<option value="1"> Round trip</option>
+							<option value="0">One way</option>
+						</select>
+					</div>
+					<div class="form-group">
+						
+						
+							<input autocomplete="off" class="NumberofTraveler form-control ipt2" data-val="true" data-val-required="+ Minimum one Traveler is required" id="NumberofTraveler" name="NumberofTraveler" type="text" value="1 Traveler"  />
+							<div id="adult" class="adult traveller-type-drpdwn traveller-hidden">
+							  <fieldset>
+								<div class="traveler-label">Adult</div>
+								<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+								  <button type="button" field="quantity" class="btn btn-default bootstrap-touchspin-down qtyminus">-</button>
+								  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+								  <input type="text" name="quantity" value="1" id="adulttravelers" travelertype="adults" class="ntravellers" readonly>
+								  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+								  <button type="button" field='quantity' class="btn btn-default bootstrap-touchspin-up qtyplus">+</button>
+								  </span> </div>
+								<div class="traveler-label">Child(2-11)</div>
+								<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+								  <button type="button" field='quantity1' class="btn btn-default bootstrap-touchspin-down qtyminus1">-</button>
+								  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+								  <input type="text" name='quantity1' value="0" id="minortravelers" travelertype="adults" class="ntravellers" readonly>
+								  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+								  <button type="button" field='quantity1' class="btn btn-default bootstrap-touchspin-up qtyplus1">+</button>
+								  </span> </div>
+								<div class="traveler-label">Infant(0-2)</div>
+								<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+								  <button type="button" field='quantity2' class="btn btn-default bootstrap-touchspin-down qtyminus2">-</button>
+								  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+								  <input type="text" name='quantity2' value="0" id="infanttravelers" travelertype="adults" class="ntravellers" readonly>
+								  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+								  <button type="button" field='quantity2' class="btn btn-default bootstrap-touchspin-up qtyplus2">+</button>
+								  </span> </div>
+							  </fieldset>
+							   <span class="closebtn"><a href="javascript:void(0);" class="closedropdown">Close</a></span>
+							</div>
+						
+			  
+					</div>
+					<div class="form-group">
+						<select class="form-control ipt3" name="classtype" id="classtype">
+						<option value="Y">Economy</option>
+						<option value="S">Premium Economy</option>
+						<option value="C">Business</option>
+						<option value="F">First</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="flight-row">
+					<div class="searchcol-1">
+					
+						<fieldset class="bradius-rtb">
+							<legend>Flight From</legend>
+							<div class="flying_from">
+								<input type="text" required class="autosuggest search-boxs sFromTbox" name="fromcity[]" id="FormControlInput1" placeholder="City or Airport"  autocomplete="off" onclick="this.focus(); this.setSelectionRange(0, 9999);">
+								<div class="suggesstion-boxs"></div>
+							</div>
+						</fieldset>
+						<div class="searchcol-2"><div class="search-reverse" id="flyingtoreverse"><img class="img-fluid" src="https://farenexa.com/images/reverse.png" alt=""></div></div>
+					</div>
+					
+					<div class="searchcol-3">
+						<fieldset class="bradius-ltb">
+							<legend>Flight To</legend>
+							<input type="text" required class="autosuggest search-box1 sToTbox" id="FormControlInput2" name="tocity[]" placeholder="City or Airport"  autocomplete="off" onclick="this.focus(); this.setSelectionRange(0, 9999);">							
+							<div class="suggesstion-box" required></div>
+						</fieldset>
+					</div>
+					<div class="searchcol-4">
+						<fieldset>
+							<legend>Depart</legend>
+							<input value="Aug 21, 2026"  class="txtDepartual sDepartDTbox" placeholder="Pick a date" id="depart" name="depart[]" tabindex="3" type="text" readonly />								
+						</fieldset>
+					</div>
+					<div class="searchcol-5">
+						<fieldset>
+							<legend>Return</legend>
+							<input Value="Aug 25, 2026" class="txtArrival sRerurnDTbox" placeholder="Pick a date" type="text" id="return" name="return[]" readonly />
+						</fieldset>
+					</div>
+					<div class="searchcol-6"><button type="submit" class="sf_button"><i class="fa fa-search"></i> Search Flight</button></div>
+					<div class="clr"></div>
+				</div>
+			</div>
+			
+			 <!-- do not remove this code -->
+		  <div class="clearfix"></div>
+		  <div class="form-group input-group w100" style="display:none !important;"> <span class="input-group-addon"><i class="fas fa-user"></i></span>
+			<div class="dropdown"> <a class="dropdown-toggle" style="cursor: pointer;" id="dropdownMenuButton" data-toggle="dropdown">&nbsp; <span id="shv">1</span> Traveler </a>
+			  <div class="dropdown-menu xdrop" aria-labelledby="dropdownMenuButton">
+				<div class="form-row">
+				  <div class="col-lg-4"> <small>Adult</small>
+					<div class="value-button" id="decreases" onclick="decreaseValue()" value="Decrease Value">-</div>
+					<input type="number" name="adult" id="number" class="adultnum" value="1" />
+					<div class="value-button" id="increases" onclick="increaseValue()" value="Increase Value">+</div>
+				  </div>
+				  <div class="col-lg-4"> <small>Child(Under 2)</small>
+					<div class="value-button" id="decreasess" onclick="decreaseValue()" value="Decrease Value">-</div>
+					<input type="number" name="child" class="childnum" id="number" value="0" />
+					<div class="value-button" id="increasess" onclick="increaseValue()" value="Increase Value">+</div>
+				  </div>
+				  <div class="col-lg-4"> <small>Lap Infant(0-1)</small>
+					<div class="value-button" id="decreasesss" onclick="decreaseValue()" value="Decrease Value">-</div>
+					<input type="number" name="infant" class="infantnum" id="number" value="0" />
+					<div class="value-button" id="increasesss" onclick="increaseValue()" value="Increase Value">+</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- End do not remove this code -->
+		  
+		</form>
+		
+		</div>
+	</div>
+</section>
+<!-- End Flight Booking Form for Desktop-->	
+
+</div>
+
+
+	
+	
+<!-- Flight Booking Form for Mobile-->	
+<section class="search-flight mobile_ticket">
+	<div class="container">
+	<form class="form-inline" action='https://farenexa.com/apiv1/searchapifind.php' method="get" onSubmit="return checkform()">
+	
+		<div class="search-fly">
+			<input checked="checked" class="slct_btn rndtrp trpact" id="radio1" name="triptype" type="radio" value="1" /> <label for="radio1">Round Trip</label>&nbsp;&nbsp;&nbsp;
+			<input class="slct_btn onwtrp trpact" id="radio2" name="triptype" type="radio" value="0" /> <label for="radio2">One Way</label>
+			<!--<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">						
+					 <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">						 
+				</li>
+				<li class="nav-item">                       
+					<a class="nav-link " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">						
+				</li>
+			</ul>-->
+			<div class="tab-content" id="myTabContent">                    
+				<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				
+					<div class="form_sec round_trip">                            
+						 <div class="form-group">
+							<div class="search-from">
+								<div class="search-label-top">From</div>
+								<input type="text" required class="form-control search-location-tbox autosuggest search-boxs" name="fromcity[]" id="FormControlInput5" placeholder="City or Airport"  autocomplete="off" onclick="this.focus(); this.setSelectionRange(0, 9999);">
+								<div class="suggesstion-boxs"></div>
+								<div class="sb-bottom-border"></div>
+								
+							</div>
+							<div class="search-reverse" id="flyingtoreversemobile"><img class="img-fluid" src="https://farenexa.com/images/reverse.png" alt=""></div>
+							<div class="search-from">
+								<div class="search-label-topr1">To</div>
+								<input type="text" required class="form-control search-location-tboxr1 autosuggest search-box1 " id="FormControlInput6" name="tocity[]" placeholder="City or Airport"  autocomplete="off" onclick="this.focus(); this.setSelectionRange(0, 9999);">
+								
+								<div class="suggesstion-box"></div>
+							</div>
+							
+						</div>
+						<hr class="my-1">
+						<div class="form-group">
+							<div class="search-from1">
+								<div class="search-label-top">Depart</div>
+								<input value="Aug 21, 2026" class="form-control search-cal-tbox" placeholder="Depart" id="departm" name="depart[]" type="text" readonly />								
+							</div>
+							<div class="search-from1">
+								<div class="search-label-topr"><span  id="returnmlbl">Return</span></div>
+								<input value="Aug 25, 2026" class="form-control search-cal-tboxr" placeholder="Return" type="text" id="returnm" name="return[]" readonly />                               
+							</div>
+							<div class="clr"></div>
+						</div>
+						<hr class="my-1">
+						<div class="form-group">
+							<div class="search-from1">
+								<div class="search-label-top">Class</div>
+								<select class="form-control ipt5" name="classtype" id="classtype">
+									<option class="option" value="Y">Economy</option>
+									<option class="option" value="S">Premium Economy</option>
+									<option class="option" value="C">Business</option>
+									<option class="option" value="F">First</option>
+								</select>							
+							</div>
+							<div class="search-from1">
+								<div class="search-label-topr">Pax</div>
+								<input autocomplete="off" class="NumberofTraveler form-control ipt2" data-val="true" data-val-required="+ Minimum one Traveler is required" id="NumberofTraveler" name="NumberofTraveler" type="text" value="1 Traveler" readonly />
+								<div id="adult" class="adult adultmobile traveller-type-drpdwn traveller-hidden">
+								  <fieldset>
+									<strong>Adults</strong>
+									<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+									  <button type="button" field="quantity" class="btn btn-default bootstrap-touchspin-down qtyminus">-</button>
+									  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+									  <input type="text" name="quantity" class="traveller-tb" value="1" id="adulttravelers" travelertype="adults" readonly>
+									  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+									  <button type="button" field='quantity' class="btn btn-default bootstrap-touchspin-up qtyplus">+</button>
+									  </span> </div>
+									<strong>Child(2-11)</strong>
+									<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+									  <button type="button" field='quantity1' class="btn btn-default bootstrap-touchspin-down qtyminus1">-</button>
+									  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+									  <input type="text" name='quantity1' class="traveller-tb" value="0" id="minortravelers" travelertype="adults" readonly>
+									  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+									  <button type="button" field='quantity1' class="btn btn-default bootstrap-touchspin-up qtyplus1">+</button>
+									  </span> </div>
+									<strong>Infant(0-2)</strong>
+									<div class="input-group bootstrap-touchspin"> <span class="input-group-btn">
+									  <button type="button" field='quantity2' class="btn btn-default bootstrap-touchspin-down qtyminus2">-</button>
+									  </span> <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+									  <input type="text" name='quantity2' class="traveller-tb" value="0" id="infanttravelers" travelertype="adults" readonly>
+									  <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span><span class="input-group-btn">
+									  <button type="button" field='quantity2' class="btn btn-default bootstrap-touchspin-up qtyplus2">+</button>
+									  </span> </div>
+								  </fieldset>
+								   <span class="closebtn"><a href="javascript:void(0);" class="closedropdown">Close</a></span>
+								</div>                              
+							</div>
+							<div class="clr"></div>
+						</div>
+						
+						<div class="search_btn">
+						<br>
+							<button type="submit" class="btn fs-btn"><i class="fa fa-search"></i> Search Flight</button>			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	</div>
+</section>
+<!-- End Flight Booking Form for Mobile-->
+
+	
+	
+
+
+<section class="ifo-panel">
+    <div class="container">
+        <div class="heading">
+            <h2><span style="color:#000;">Why </span> Choose Us?</h2>
+            <div class="smtext">FareNexa.com delivers trusted travel services with convenience and personalized support.</div>
+        </div>
+        <div class="services">
+           <div class="service">
+                <div class="service-icon"><img src="images/why03.png"></div>
+                <h3 class="deste">Dedicated Customer Support</h3>
+                <p class="prest">Travel with confidence knowing our customer support team is available 24/7 to help.</p>
+            </div>
+            <div class="service">
+                <div class="service-icon"><img src="images/why02.png"></div>
+                <h3 class="deste">Best Price Guarantee</h3>
+                <p class="prest">Book with confidence and enjoy great value on flights, hotels, and complete travel packages.</p>
+            </div>
+            
+            <div class="service">
+                <div class="service-icon"><img src="images/why04.png"></div>
+                <h3 class="deste">Trusted Booking Platform</h3>
+                <p class="prest">Your security is our priority, with encrypted payments and safe, secure transactions every time you book.</p>
+            </div>
+             <div class="service">
+                <div class="service-icon"><img src="images/why01.png"></div>
+
+                <h3 class="deste">Hassle-Free Booking</h3>
+                <p class="prest">Plan your journey with FareNexa and enjoy seamless flight booking from start to finish.</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+	<div class="td-panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="headingbox">
+						<div class="leftbox"><h1>Most-Loved Destinations</h1></div>
+						
+						<div class="clr"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+			    <div class="col-md-3">
+					<a href="tel:+1-888-752-6024">
+						<div class="tdtile-box">
+							<div class="tdtile-img"><div class="grow"><img src="images/los-angeles-flight.jpg" class="fullimg" alt="Los Angeles"></div></div>
+							<div class="tdtile-title">Los Angeles</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="tel:+1-888-752-6024">
+						<div class="tdtile-box">
+							<div class="tdtile-img"><div class="grow"><img src="images/new-york-flight.jpg" class="fullimg" alt="New York"></div></div>
+							<div class="tdtile-title">New York</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3">
+					<a href="tel:+1-888-752-6024">
+						<div class="tdtile-box">
+							<div class="tdtile-img"><div class="grow"><img src="images/toronto-flight.jpg" class="fullimg" alt="Toronto"></div></div>
+							<div class="tdtile-title">Toronto</div>
+						</div>
+					</a>
+				</div>
+				
+				
+				<div class="col-md-3">
+				    	<a href="tel:+1-888-752-6024">
+						<div class="tdtile-box">
+							<div class="tdtile-img">
+								<div class="grow"><img src="images/chicago-flight.jpg" class="fullimg" alt="Chicago"></div>
+							</div>
+							<div class="tdtile-title">Chicago</div>
+						</div>
+					</a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="ac-panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="ac-contentbox">
+						<div class="heading">
+							<h1>Fly Anywhere with  <span class="red">Domestic</span> &amp; <span class="red">International</span> Flight Deals</h1>
+							<div><img src="images/heading-border.png"></div>
+						</div>
+						<div class="textbox">
+							<p>Welcome to FareNexa, a USA-based travel agency dedicated to helping travelers find affordable flights, convenient travel solutions, and exceptional customer service. Whether you're planning a family vacation, business trip, last-minute getaway, or international journey, our goal is to make travel planning simple, reliable, and stress-free.</p>
+
+                            <p>At FareNexa, we believe that travel should be accessible, convenient, and affordable for everyone. Our experienced travel specialists work tirelessly to help customers secure competitive airfare options and personalized travel assistance tailored to their needs.</p>
+						
+						</div>
+						<div><a href="tel:+1-888-752-6024" class="aboutcallbtn"><i class="fa fa-phone"></i> <span class="spancallnow">Call Now:</span> +1-888-752-6024</a></div>
+					</div>
+				</div>
+				<div class="col-md-6"><img src="images/about-img.jpg" class="fullimage" alt="Book Your Flight Today"></div>
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="kf-panel">
+   <div class="container" bis_skin_checked="1">
+		<div class="row" bis_skin_checked="1">
+			<div class="col-md-6" bis_skin_checked="1">
+				<div class="heading" bis_skin_checked="1">
+					<h5>Why Choose FareNexa?</h5>
+					<h2>Find the Best Flight Deals with FareNexa</h2>
+				</div>
+				<div class="text-box" bis_skin_checked="1">Enjoy exclusive deals and discounts to book flights at the best possible fares.</div>
+				<div class="row" bis_skin_checked="1">
+					<div class="col-md-12" bis_skin_checked="1">
+						<div class="tile-box" bis_skin_checked="1">
+							<div class="icon-box" bis_skin_checked="1"><img src="images/fb-location.png"></div>
+							<div class="text-box" bis_skin_checked="1">
+								<div class="title" bis_skin_checked="1">Wide Range of Options</div>
+								<div class="text" bis_skin_checked="1">Travel to more than 500 destinations with exclusive deals.</div>
+							</div>
+							<div class="clr" bis_skin_checked="1"></div>
+						</div>
+					</div>
+					<div class="col-md-12" bis_skin_checked="1">
+						<div class="tile-box" bis_skin_checked="1">
+							<div class="icon-box" bis_skin_checked="1"><img src="images/fb-calendar.png"></div>
+							<div class="text-box" bis_skin_checked="1">
+								<div class="title" bis_skin_checked="1">Great Travel Deals</div>
+								<div class="text" bis_skin_checked="1">Get the best flight offers at prices that fit your budget.</div>
+							</div>
+							<div class="clr" bis_skin_checked="1"></div>
+						</div>
+					</div>
+					<div class="col-md-12" bis_skin_checked="1">
+						<div class="tile-box" bis_skin_checked="1">
+							<div class="icon-box" bis_skin_checked="1"><img src="images/fb-ticket.png"></div>
+							<div class="text-box" bis_skin_checked="1">
+								<div class="title" bis_skin_checked="1">Effortless Booking</div>
+								<div class="text" bis_skin_checked="1">Convenient Flight Booking Made Simple</div>
+							</div>
+							<div class="clr" bis_skin_checked="1"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6" bis_skin_checked="1"><div class="kf-imgbox" bis_skin_checked="1"><img src="images/fb-img.png" class="fullimg"></div></div>
+		</div>
+   </div>
+</section>
+
+<section style="display:none;">
+	<div class="bafo-panel">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="headingbox">
+						<h2>Top Flight Deals <span style="color:#218eec;">Worldwide</span></h2>
+						<div class="smtext">Competitive fares for your route-specific searches.</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">	
+			
+				
+														
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Hartsfield Jackson - ATL&depart[]=Sep 02 2026&return[]=Sep 12 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/B6.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="B6"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy - Hartsfield Jackson </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 02 Sep 2026 - 12 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$408.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Orlando - MCO&depart[]=Sep 14 2026&return[]=Sep 24 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/F9.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="F9"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy -  MCO </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 14 Sep 2026 - 24 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$341.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Lindbergh - SAN&depart[]=Aug 30 2026&return[]=Sep 09 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/DL.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="DL"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy -  SAN </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 30 Aug 2026 - 09 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$294.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Borinquen Municipal - BQN&depart[]=Sep 10 2026&return[]=Sep 20 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/AS.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="AS"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy - Borinquen Municipal </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 10 Sep 2026 - 20 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$362.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Newark Liberty - EWR&depart[]=Sep 11 2026&return[]=Sep 21 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/UA.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="UA"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy - Newark Liberty </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 11 Sep 2026 - 21 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$445.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Augusto C Sandino - MGA&depart[]=Aug 29 2026&return[]=Sep 08 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/AM.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="AM"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy -  MGA </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 29 Aug 2026 - 08 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$307.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Miami - MIA&depart[]=Aug 30 2026&return[]=Sep 09 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/AA.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="AA"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy - Miami </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 30 Aug 2026 - 09 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$200.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+										
+					<div class="col-md-6">
+					    <a href="https://farenexa.com/apiv1/searchapifind.php?triptype=1&fromcity[]=John F Kennedy - JFK&tocity[]=Edmonton - YEG&depart[]=Sep 08 2026&return[]=Sep 18 2026&quantity=1&quantity1=0&quantity2=0&NumberofTraveler=1 Traveler&classtype=Y&curr=USD&reqs=web" >
+					   <div class="bafobox">
+							<div class="col1"><img src="https://content.r9cdn.net/rimg/provider-logos/airlines/v/B6.png?crop=false&width=108&height=92&fallback=default1.png&_v=02a9af26513d796d51e54147426d15b5" style="width:40px; height:auto;" alt="B6"></div>
+							<div class="col2">
+								<div class="fromto">John F Kennedy -  YEG </div>
+								<div class="date"><i class="fa fa-clock-o"></i> 08 Sep 2026 - 18 Sep 2026</div>
+							</div>
+							<div class="col3">
+								<div class="price">$273.00</div>
+								<div class="person">Per Person</div>
+							</div>
+							<div class="clr"></div>
+						</div>
+						</a>
+					</div>					
+												
+								
+				
+				
+				
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col11">
+					<div class="logobox">
+						<a href="https://farenexa.com/"><img src="https://farenexa.com/images/footer-logo.png" alt="FareNexa"></a>
+					</div>
+				    <div class="contact-info-row"><i class="fa fa-map-marker"></i> &nbsp; <strong>Corporate Office:</strong><br> 134 S Street, Windham, NY 12496</div>
+					<div class="contact-info-row"><i class="fa fa-map-marker"></i> &nbsp; <strong>Registered Office:</strong><br> 31 Scandinavian Dr Windham, NY 12496</div>
+					
+					<div class="contact-info-row"><i class="fa fa-envelope-o"></i> &nbsp; <a href="mailto:info@farenexa.com" class="contnav">info@farenexa.com</a></div>
+					<div class="contact-info-row"><i class="fa fa-phone"></i> &nbsp; <a href="tel:+1-888-752-6024" class="contnav">+1-888-752-6024</a></div>
+				    	<div class="footer-img">
+					     
+						<img src="https://farenexa.com/images/payment.png" alt="Payment">
+					</div>
+				</div>			
+			
+				
+				<div class="col12">
+					<div class="heading">Important Links</div>
+					<div class="footer-navbox">                      
+						<ul>
+						    <li><a href="https://farenexa.com/advertiser-disclosure">Advertiser Disclosure</a></li>
+							<li><a href="https://farenexa.com/refund-policy">Cancellation & Refund Policy</a></li>
+							<li><a href="https://farenexa.com/fare-disclosure-policy">Fare Disclosure Policy</a></li>
+							<li><a href="https://farenexa.com/california-consumer-privacy-notice">California Consumer Privacy Notice</a></li>
+							<li><a href="https://farenexa.com/cookies-policy">Cookies Policy</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				
+			   <div class="col12">
+					<div class="heading">Quick Links</div>
+					<div class="footer-navbox">                      
+						<ul>
+							<li><a href="https://farenexa.com/privacy-policy">Privacy Policy</a></li>			
+							<li><a href="https://farenexa.com/terms-and-conditions">Terms and Conditions</a></li>
+							<li><a href="https://farenexa.com/disclaimer">Disclaimer</a></li>
+							<li><a href="https://farenexa.com/about-us">About Us</a></li>
+							<li><a href="https://farenexa.com/contact-us">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+
+
+				
+				<div class="clr"></div>
+			</div>
+		</div>
+		
+
+
+		<div class="footer_lower">
+			<div class="desclaimer">
+				<p>Disclaimer: FareNexa is an independent travel agency and is not affiliated with any airline or travel provider. All trademarks belong to their respective owners. Flight fares, availability, and travel information are subject to change without notice. By using this website, you agree to our Terms & Conditions and Privacy Policy.</p>
+
+			</div>
+			<div class="copyright">Copyright © 2026.  All Rights Reserved.</div>
+		</div>
+		
+	</div>
+</footer>
+<script src="https://farenexa.com/menu/nav.jquery.min.js"></script>
+
+<script> $('.nav').nav(); </script>
+
+
+
+
+<!-- End slider script -->
+
+					
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	
+    <!--<script src="https://farenexa.com/js/newd/jquery.min.js"></script>
+    <script src="https://farenexa.com/js/newd/slick.min.js"></script>   
+    <script src="https://farenexa.com/js/newd/bootstrap.min.js"></script>
+    <script src="https://farenexa.com/js/newd/custom.js"></script>-->
+	
+	
+	
+	  <!-- Javascript -->
+    <!--<script type="text/javascript" src="https://farenexa.com/assets/js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery.noconflict.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/modernizr.2.7.1.min.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery.placeholder.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery-ui.1.10.4.min.js"></script>-->
+
+    <!-- Twitter Bootstrap -->
+    <script type="text/javascript" src="https://farenexa.com/assets/js/bootstrap.min.js"></script>
+
+    <!-- parallax -->
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery.stellar.min.js"></script>
+
+    <!-- parallax -->
+    <script type="text/javascript" src="https://farenexa.com/assets/js/jquery.stellar.min.js"></script>
+
+    <!-- waypoint -->
+    <script type="text/javascript" src="https://farenexa.com/assets/js/waypoints.min.js"></script>
+
+    <!-- load page Javascript -->
+    <script type="text/javascript" src="https://farenexa.com/assets/js/theme-scripts.js"></script>
+    <script type="text/javascript" src="https://farenexa.com/assets/js/scripts.js"></script>
+	
+		
+	
+	<script>
+	  $('.closedropdown').click(function(e){
+     
+	  $('.traveller-hidden').hide();
+	});
+	
+	$('#FormControlSelect1').change(function () { 
+		if ($(this).val() == '0'){
+			$('#return').addClass('disabledreturndate');
+		   //$('#return').hide();
+		  $('#return').attr('disabled','disabled');
+		  $('#returnfield').hide();
+		}
+		if ($(this).val() == '1'){
+		   $('#return').removeClass('disabledreturndate');
+		  //$('#return').show();
+		  $('#return').removeAttr("disabled"); 
+		  $('#returnfield').show();
+		}
+	});
+	
+	$('#radio2').click(function () {
+			$('#returnm').addClass('disabledreturndate');
+			//$('#returnm').hide();
+		   $('#returnm').attr('disabled','disabled');
+	});
+	
+	$('#radio1').click(function () { 
+			$('#returnm').removeClass('disabledreturndate');
+			//$('#returnm').show();
+		    $('#returnm').removeAttr("disabled"); 
+	});
+	</script>
+	
+
+	
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<!-- <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css" rel="Stylesheet" type="text/css" /> -->
+
+<script type="text/javascript">
+var $j = jQuery.noConflict();
+	$j(function () {
+		$j("#depart").datepicker({
+			numberOfMonths: 2,
+			minDate: 0,
+			dateFormat: 'M d, yy',
+			onSelect: function (selected) {				
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() + 0);
+				$j("#return").datepicker("option", "minDate", dt);
+			}
+		});
+		$j("#return").datepicker({
+			numberOfMonths: 2,
+			minDate: 0,
+			dateFormat: 'M d, yy',
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() - 0);
+				$j("#depart").datepicker("option", "maxDate", dt);
+			}
+		});
+	});
+	
+	$j(function () {
+		$j("#departm").datepicker({
+			numberOfMonths: 1,
+			minDate: 0,
+			dateFormat: 'M d, yy',
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() + 0);
+				$j("#returnm").datepicker("option", "minDate", dt);
+			}
+		});
+		$j("#returnm").datepicker({
+			numberOfMonths: 1,
+			minDate: 0,
+			dateFormat: 'M d, yy',
+			onSelect: function (selected) {
+				var dt = new Date(selected);
+				dt.setDate(dt.getDate() - 0);
+				$j("#departm").datepicker("option", "maxDate", dt);
+			}
+		});
+	});
+
+	$j('body').click(function(){
+			$j("#adult").hide();
+		});	
+
+		$j('#adult').click(function(e) {
+			e.stopPropagation();
+		});	
+
+		$j('body').click(function(){
+			$j(".adultmobile").hide();
+		});	
+
+		$j('.adultmobile').click(function(e) {
+			e.stopPropagation();
+		});	
+		
+		$j('.nav-button').on('click', function () {	
+			$j(".nav").slideToggle("slow", function(){
+			   // no need to do here
+			});
+			$j(".mob-ccountry-contact").slideToggle("slow", function(){
+			   // no need to do here
+			});
+    });	
+	
+</script>
+
+
+
+
+<!-- Error Popup -->
+
+<style>
+.modal-top {
+    background-color: #fefefe;
+    margin: 5% auto 10% auto;
+    border: none;
+    width: 45%;
+    border-radius: 0;
+	position:relative;border-radius: 7px;
+    overflow: hidden;
+}
+.modal-call {
+    background:url(https://farenexa.com/images/girls.jpg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 92px;
+}
+
+.phone-modal-content {
+    text-align: center;
+    padding: 23px 14px 25px 15px;
+	color:#000;
+}
+.model-lpanel{width:65%;height:auto;padding:0 0 0 2%;margin:auto;float:left;}
+.model-rpanel{width:33%;height:auto;padding:0;margin:auto;float:left;}
+.model-rpanel img{width:100%; height:auto;}
+
+.modal-bg{background-color: rgba(0,0,0,0.6);}
+.modal-top-visible{overflow: visible;}
+.secpop {width:92%;height: auto;padding:0;margin:auto;float: none;}
+.secpop-h3{width: 100%;height: auto;padding: 0;margin: auto;font-size: 27px;text-align: center;}
+.secpop-country{width:100%;height:auto;padding:15px;margin:0; text-align:center; text-transform:uppercase;font-size: 25px;font-weight: bold;}
+.closebtn {right: -25px !important;top: -20px !important;}
+.phone-modal-btn{width: 410px; padding: 7px;margin: auto;background: linear-gradient(#fd7913,#ed5307);font-size: 27px;font-weight: 600;text-decoration: none;color: #fff;text-align: center;border-radius: 7px;border:solid 1px #ed5307;}
+.phone-modal-btn .callspan{display:inline-block;}
+.phone-modal-btn .callspanicon{display:none;}
+
+@media (min-width: 320px) and (max-width: 481px){
+	.modal-top {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: none;
+    width: 90%;overflow:hidden;
+    border-radius: 7px;
+	position:relative;
+	}
+	.modal-top-visible{overflow: visible;}
+	.closebtn {right: -15px !important;top: -30px !important;}
+	
+	.phone-modal-btn{width:285px;}
+	.phone-modal-btn .callspan{display:none;}	
+	.phone-modal-btn .callspanicon{display:inline-block;}	
+}
+</style>
+
+<!-- Error Popup -->
+<div id="id011" class="modal modal-bg">
+  <form class=" modal-top animate modal-top-visible">
+    <span ng-click="ClosePopUp()" class="close closeTop closebtn" title="Close">&times;</span>
+    <a href="tel:+1-888-752-6024">
+    <div class="modal-call">
+      
+      <div class="phone-modal-content">
+	  <div Class="model-lpanel secpop">
+	  	  
+        <div class="phone-modal-text floadmodalinterval">
+          <h3 class="centerHeading secpop-h3">Sorry! Currently We don't operate in</h3>
+		  <div id="cntryId" Class="secpop-country">Nigeria</div>
+        </div>
+        <div class="phone-modal-btn"><span class="callspan">CALL NOW: &nbsp;</span><span class="callspanicon"><i class="fa fa-phone"></i> &nbsp;</span>+1-888-752-6024</div>
+      
+	  </div>
+	  <div Class="clr"></div>
+	  </div>
+    </div>
+    </a>
+  </form>
+</div>
+
+
+	<script>		
+
+		function checkform()
+		{
+			var from = $("#depart").val();
+			var too = $("#return").val();				
+			var tripval = $("#FormControlSelect1").val();
+			var from1 = $("#FormControlInput1").val();
+			var to1 = $("#FormControlInput2").val();
+			
+			if(from1 == ""){
+				alert("Please input Flying From.");
+				$("#FormControlInput1").focus();
+				return false;
+			}else if(to1 == ""){
+				alert("Please input Flying To.");
+				$("#FormControlInput2").focus();
+				return false;
+			}else if(from == ""){
+				alert("Input depart date.");
+				$("#depart").focus();
+				return false;
+			}else if(tripval == "1"){				
+				if(too == ""){
+					alert("Input return date.");
+					$("#return").focus();
+					return false;
+				}else if(Date.parse(from) > Date.parse(too)){
+					alert("Invalid Depart and Return date.");						
+					return false;
+				}else{						
+					return true;
+				}					
+			}else{						
+				return true;
+			}					
+		}
+		
+		function submitForm() {
+			var valid;	
+			
+			valid = checkform();
+			var frontEndURL = ' https://farenexa.com/';	
+			//alert(valid+"=Yes="+frontEndURL);
+			//alert(frontEndURL);
+			if(valid) {
+				jQuery.ajax({
+					url: frontEndURL+"apiv1/validcountry.php",
+					data:'source='+$("#FormControlInput1").val()+'&dest='+$("#FormControlInput2").val()+'&act=checking',
+					type: "POST",
+					success:function(data){
+						if(data == "yes"){
+							document.getElementById("formsidd").submit(); 
+						}else{	
+							showPopupError();
+							$("#cntryId").html(data);      
+							//$('#id04').modal('show');
+						}						
+					},
+					error:function (){}
+				});
+			}
+		}
+
+		
+		function checkformmobile()
+		{
+			var from = $("#departm").val();
+			var too = $("#returnm").val();
+			var from1 = $("#FormControlInput5").val();
+			var to1 = $("#FormControlInput6").val();
+			
+			if(from1 == ""){
+				alert("Please input Flying From.");
+				$("#FormControlInput5").focus();
+				return false;
+			}else if(to1 == ""){
+				alert("Please input Flying To.");
+				$("#FormControlInput6").focus();
+				return false;
+			}
+			else if(from == ""){
+				alert("Input depart date.");
+				$("#departm").focus();
+				return false;
+			}else if($('#radio1').is(':checked')){							
+				if(too == ""){
+					alert("Input return date.");
+					$("#returnm").focus();
+					return false;
+				}else if(Date.parse(from) > Date.parse(too)){
+					alert("Invalid Depart and Return date.");						
+					return false;
+				}else{
+					return true;
+				}
+			}else{
+				return true;
+			}					
+		}
+		
+		function submitFormMobile() {
+			var valid;	
+			valid = checkformmobile();
+			var frontEndURL = ' https://farenexa.com/';	
+			//alert(frontEndURL);
+			if(valid) {				
+				jQuery.ajax({
+					url: frontEndURL+"apiv1/validcountry.php",
+					data:'source='+$("#FormControlInput5").val()+'&dest='+$("#FormControlInput6").val()+'&act=checking',
+					type: "POST",
+					success:function(data){
+						//alert("ppp"+data);
+						if(data == "yes"){
+							document.getElementById("formsiddmobile").submit(); 
+						}else{							
+							showPopupError();
+							$("#cntryId").html(data);    
+						}						
+					},
+					error:function (){}
+				});
+			}
+		}
+		
+		
+		jQuery("#submitsubs").click(function() {
+			var subemail 	= jQuery('#subemail').val();		
+			var form_data	=	{'subemail' : subemail};		
+			var frontEndURL = "https://farenexa.com/";
+			$('#subemail').css('border-color', '');
+			if(subemail != ""){
+				jQuery.ajax({
+					async: false,
+					type: "POST",
+					url: frontEndURL+"/ajax_common.php?action=subscribe",
+					data: form_data,      	
+					success: function(result){
+					jQuery('#subemail').val('');
+					alert("Thank you for signing up with us.");						
+					//location.reload();
+					//window.location = frontEndURL+"index.php?opt=booking&id="+bookidnew+"&a="+btn;
+				  } 
+				});
+			}else{
+				$('#subemail').css('border-color', 'red');
+				//alert("OOPS! Please write your comment.");
+			}
+			
+		});
+	</script>
+	
+	
+ 
+
+
+</body>
+</html>
+ 
+ 	
+ <script>
+     $(document).ready(function() {
+    $("input[name$='triptype']").click(function() {
+        var test = $(this).val();
+          $("div.desc").hide();
+        $("#Cars" + test).show();
+if(test!='3'){
+        $(".multicity_new").hide();
+}else{
+      $(".multicity_new").show();
+}
+    });
+});
+
+function foo(){
+	 	$.ajax({
+		type: "POST",
+		url: "https://farenexa.com/readdate.php",
+		data:'keyword=1',
+	  dataType:"json",
+		success: function(data){
+
+		  document.getElementById("depart").value = data.deprtdtes;
+		  document.getElementById("return").value = data.returndtes;
+		}
+		});
+}
+ </script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>-->
+
+     <script type="text/javascript">
+	  var x = 1;
+       var y = 0;
+        var c = 0;
+$(".adultnum").val(x);
+var increment = document.getElementById('increases'); // find the element with the ID 'increment'
+var decrement = document.getElementById('decreases'); // find the element with the ID 'decrement'
+
+increment.addEventListener('click', function () {
+    var increments = document.getElementById('increases');
+  // this function is executed whenever the user clicks the increment button
+ 
+       var vl = ++x;
+   $(".adultnum").val(vl);
+  
+  var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+});
+
+decrement.addEventListener('click', function () {
+  // this function is executed whenever the user clicks the decrement button
+var a=$(".adultnum").val(x);
+      
+       if(x>1){
+       var vl = --x;
+   
+   $(".adultnum").val(vl);
+       }else{
+          $(".adultnum").val('1');
+           
+       }
+  var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+});
+   
+   
+  
+$(".childnum").val(y);
+var increment = document.getElementById('increasess'); // find the element with the ID 'increment'
+var decrement = document.getElementById('decreasess'); // find the element with the ID 'decrement'
+
+increment.addEventListener('click', function () {
+   
+       var vl = ++y;
+   $(".childnum").val(vl);
+   var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+ 
+});
+
+decrement.addEventListener('click', function () {
+  // this function is executed whenever the user clicks the decrement button
+var a=$(".childnum").val(y);
+      
+       if(y>0){
+       var vl = --y;
+   
+   $(".childnum").val(vl);
+       }else{
+          $(".childnum").val('0');
+           
+       }
+  var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+});
+   
+   
+  
+$(".infantnum").val(c);
+var increment = document.getElementById('increasesss'); // find the element with the ID 'increment'
+var decrement = document.getElementById('decreasesss'); // find the element with the ID 'decrement'
+
+increment.addEventListener('click', function () {
+   
+       var vl = ++c;
+   $(".infantnum").val(vl);
+   var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+});
+
+decrement.addEventListener('click', function () {
+  // this function is executed whenever the user clicks the decrement button
+var a=$(".infantnum").val(y);
+      
+       if(c>0){
+       var vl = --c;
+   
+   $(".infantnum").val(vl);
+       }else{
+          $(".infantnum").val('0');
+           
+       }
+   var p=x+y+c;
+  document.getElementById("shv").innerHTML=p;
+});
+$(document).ready(function(){
+	$(".search-box1").keyup(function(){
+	    var x=$(this).val();
+	   if(x!='' && x.length > 2){
+		$.ajax({
+		type: "POST",
+		url: "https://farenexa.com/readCountry.php",
+		data:'keyword='+$(this).val(),
+		beforeSend: function(){
+			//$(".search-box1").css("background","url(LoaderIcon.gif) no-repeat 165px");
+		},
+		success: function(data){
+			$(".suggesstion-box").show();
+			$(".suggesstion-box").html(data);
+			//$(".search-box1").css("background","#FFF");
+		}
+		});
+	   }else{
+	     $(".suggesstion-box").hide();  
+	   }
+	});
+});
+
+function selectCountry(val) {
+$(".search-box1").val(val);
+$(".suggesstion-box").hide();
+}
+$(document).ready(function(){
+	$(".search-boxs").keyup(function(){
+	    var x=$(this).val();
+	   if(x!='' && x.length > 2){
+		$.ajax({
+		type: "POST",
+		url: "https://farenexa.com/readCountrys.php",
+		data:'keyword='+$(this).val(),
+		beforeSend: function(){
+			//$(".search-boxs").css("background","url(LoaderIcon.gif) no-repeat 165px");
+		},
+		success: function(data){
+			$(".suggesstion-boxs").show();
+			$(".suggesstion-boxs").html(data);
+			//$(".search-boxs").css("background","#FFF");
+		}
+		});
+	   }else{
+	     $(".suggesstion-boxs").hide();  
+	   }
+	});
+});
+
+function selectCountrys(val) {
+$(".search-boxs").val(val);
+$(".suggesstion-boxs").hide();
+}
+ $(function(){
+                $(".auto").autocomplete({
+                    source: "https://farenexa.com/autocom.php",
+                    minLength: 1,
+                   
+			
+            create: function (event,ui){
+                
+               $(this).data('ui-autocomplete')._renderItem = function (ul, item) {
+                return $('<li class="inline-item">')
+                    .append("<div class='col-xs-2  select-icon' style='display:inline'><i class='fa fa-map-marker fa-2x fa-fw' aria-hidden='true' style='font-size: 16px;'></i></div><div class='col-xs-10 ' style='display:inline'><div class='select-airport'>"   +item.title +"</div><div class='select-city'>"   +item.country +"</div></div>")
+                    .appendTo(ul);
+            };
+        }
+					
+                });
+
+                
+            });
+
+</script>	
+<script src="https://farenexa.com/js/implement-score-flight1.js"></script>

@@ -1,0 +1,1374 @@
+/* =========================================================
+   ADD-ONS PAGE
+========================================================= */
+
+.addons-page {
+    min-height: 80vh;
+    background: #f8fafc;
+    padding: 42px 20px 80px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.addons-progress-container {
+    width: 96%;
+    max-width: 1150px;
+    margin: 0 auto 34px;
+}
+
+.addons-progress {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addons-progress-step {
+    min-width: 105px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.addons-progress-step span {
+    color: #94a3b8;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.addons-progress-number {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e2e8f0;
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.addons-progress-step.completed .addons-progress-number {
+    background: #FB923C;
+    color: #ffffff;
+}
+
+.addons-progress-step.completed span {
+    color: #FB923C;
+}
+
+.addons-progress-step.active .addons-progress-number {
+    background: #f97316;
+    color: #ffffff;
+}
+
+.addons-progress-step.active span {
+    color: #f97316;
+}
+
+.addons-progress-line {
+    height: 2px;
+    flex: 1;
+
+    max-width: 120px;
+
+    margin: 0 8px 25px;
+
+    background: #e2e8f0;
+}
+
+.addons-progress-line.completed-line {
+    background: #FB923C;
+}
+
+.addons-progress-line.active-line {
+    background: #f97316;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.addons-header {
+    width: 96%;
+    max-width: 1150px;
+
+    margin: 0 auto 28px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 25px;
+}
+
+.addons-header-content {
+    min-width: 0;
+}
+
+.addons-header h1 {
+    margin: 0 0 7px;
+
+    color: #0f172a;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.addons-header p {
+    margin: 0;
+
+    max-width: 720px;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.addons-back-top-btn {
+    flex-shrink: 0;
+
+    min-height: 42px;
+
+    padding: 0 17px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: #FB923C;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.addons-back-top-btn:hover {
+    background: #eef8fc;
+    border-color: #FB923C;
+    color: #ea580c;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.addons-layout {
+    width: 96%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 2.15fr) minmax(280px, 1fr);
+
+    gap: 28px;
+
+    align-items: start;
+}
+
+.addons-main-section {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   COMMON CARD
+========================================================= */
+
+.addons-card,
+.addons-summary-card,
+.addons-info-card {
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+
+    box-shadow:
+        0 4px 16px rgba(0, 0, 0, 0.04);
+
+    box-sizing: border-box;
+}
+
+.addons-card {
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.addons-summary-card {
+    padding: 21px;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.addons-card-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 20px;
+}
+
+.addons-heading-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    background: #fff7ed;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+.addons-card-heading h2 {
+    margin: 0 0 4px;
+
+    color: #1e293b;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.addons-card-heading p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.addons-note {
+    margin-bottom: 18px;
+
+    padding: 11px 13px;
+
+    border-left: 3px solid #FB923C;
+    border-radius: 7px;
+
+    background: #f4fafc;
+
+    color: #475569;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.addons-note strong {
+    color: #FB923C;
+}
+
+
+/* =========================================================
+   OPTION GRID
+========================================================= */
+
+.addons-option-grid {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   OPTION CARD
+========================================================= */
+
+.addons-option-card {
+    width: 100%;
+
+    min-height: 72px;
+
+    padding: 14px 15px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 22px minmax(0, 1fr) auto;
+
+    align-items: center;
+
+    gap: 13px;
+
+    border: 1px solid #dbe3eb;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.addons-option-card:hover {
+    border-color: #FB923C;
+    background: #fbfdfe;
+}
+
+.addons-option-card.selected {
+    border-color: #FB923C;
+
+    background: #eef8fc;
+
+    box-shadow:
+        0 0 0 1px #FB923C;
+}
+
+.addons-option-card:active {
+    transform: scale(0.998);
+}
+
+
+/* =========================================================
+   OPTION CHECK
+========================================================= */
+
+.addons-option-check {
+    width: 21px;
+    height: 21px;
+
+    box-sizing: border-box;
+
+    border: 2px solid #cbd5e1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.addons-option-card.selected .addons-option-check {
+    border-color: #FB923C;
+    background: #FB923C;
+}
+
+
+/* =========================================================
+   OPTION CONTENT
+========================================================= */
+
+.addons-option-content {
+    min-width: 0;
+}
+
+.addons-option-content strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.addons-option-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   OPTION PRICE
+========================================================= */
+
+.addons-option-price {
+    flex-shrink: 0;
+
+    color: #FB923C;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   PET TOGGLE
+========================================================= */
+
+.pet-toggle-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 14px 15px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+
+    background: #f8fafc;
+}
+
+.pet-toggle-content {
+    min-width: 0;
+}
+
+.pet-toggle-content strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.pet-toggle-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   PET SWITCH
+========================================================= */
+
+.pet-switch {
+    width: 72px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    padding: 0 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+
+    background: #e2e8f0;
+    color: #64748b;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.pet-switch span {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.18);
+
+    transition: 0.2s ease;
+}
+
+.pet-switch.on {
+    background: #FB923C;
+    border-color: #FB923C;
+    color: #ffffff;
+}
+
+.pet-switch.on span {
+    order: 2;
+}
+
+
+/* =========================================================
+   PET FORM
+========================================================= */
+
+.pet-form {
+    margin-top: 18px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #edf2f7;
+}
+
+.pet-warning {
+    margin-bottom: 18px;
+
+    padding: 12px 14px;
+
+    border-left: 3px solid #f97316;
+    border-radius: 7px;
+
+    background: #fff7ed;
+
+    color: #7c2d12;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.pet-warning strong {
+    color: #c2410c;
+}
+
+.pet-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================================================
+   FORM FIELDS
+========================================================= */
+
+.addons-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.addons-field label {
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.addons-field input,
+.addons-field select {
+    width: 100%;
+    height: 43px;
+
+    box-sizing: border-box;
+
+    padding: 0 12px;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #1e293b;
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.addons-field input:focus,
+.addons-field select:focus {
+    border-color: #FB923C;
+
+    box-shadow:
+        0 0 0 3px rgba(251, 146, 60, 0.10);
+}
+
+.addons-field input::placeholder {
+    color: #94a3b8;
+}
+
+
+/* =========================================================
+   PET VALIDATION
+========================================================= */
+
+.addons-validation-message {
+    margin-top: 14px;
+
+    padding: 10px 12px;
+
+    border-radius: 7px;
+
+    background: #fff7ed;
+    color: #c2410c;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   PRIORITY / INSURANCE
+========================================================= */
+
+.addons-toggle-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.addons-toggle-card {
+    min-height: 72px;
+
+    padding: 14px 15px;
+
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr) auto;
+
+    align-items: center;
+
+    gap: 13px;
+
+    border: 1px solid #dbe3eb;
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.addons-toggle-card:hover {
+    border-color: #FB923C;
+    background: #fbfdfe;
+}
+
+.addons-toggle-card.selected {
+    border-color: #FB923C;
+
+    background: #eef8fc;
+
+    box-shadow:
+        0 0 0 1px #FB923C;
+}
+
+.addons-toggle-card input {
+    width: 18px;
+    height: 18px;
+
+    margin: 0;
+
+    accent-color: #FB923C;
+
+    cursor: pointer;
+}
+
+.addons-toggle-content {
+    min-width: 0;
+}
+
+.addons-toggle-content strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.addons-toggle-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.addons-toggle-card>span {
+    color: #FB923C;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   BOTTOM ACTIONS
+========================================================= */
+
+.addons-bottom-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-top: 6px;
+}
+
+.mobile-only-actions {
+    display: none;
+}
+
+.addons-secondary-btn,
+.addons-primary-btn {
+    min-height: 48px;
+
+    padding: 0 20px;
+
+    border-radius: 9px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.addons-secondary-btn {
+    border: 1px solid #cbd5e1;
+
+    background: #ffffff;
+    color: #475569;
+}
+
+.addons-secondary-btn:hover {
+    border-color: #94a3b8;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.addons-primary-btn {
+    border: 1px solid #f97316;
+
+    background: #f97316;
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(249, 115, 22, 0.22);
+}
+
+.addons-primary-btn:hover:not(:disabled) {
+    background: #ea580c;
+    border-color: #ea580c;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 18px rgba(249, 115, 22, 0.30);
+}
+
+.addons-primary-btn:disabled {
+    opacity: 0.55;
+
+    cursor: not-allowed;
+
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   SUMMARY
+========================================================= */
+
+.addons-summary-section {
+    position: sticky;
+    top: 95px;
+}
+
+.addons-summary-card h3 {
+    margin: 0 0 17px;
+
+    padding-bottom: 11px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #0f172a;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.addons-summary-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 13px;
+
+    color: #475569;
+
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.addons-summary-row span {
+    min-width: 0;
+}
+
+.addons-summary-row strong {
+    flex-shrink: 0;
+
+    color: #1e293b;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-align: right;
+    white-space: nowrap;
+}
+
+.addons-summary-row .summary-warning {
+    color: #c2410c;
+
+    white-space: normal;
+    max-width: 125px;
+}
+
+.addons-summary-card hr {
+    border: 0;
+
+    border-top: 1px solid #f1f5f9;
+
+    margin: 15px 0;
+}
+
+.addons-summary-total {
+    margin-bottom: 0;
+}
+
+.addons-summary-total span,
+.addons-summary-total strong {
+    color: #0f172a;
+
+    font-size: 13px;
+}
+
+.addons-summary-total strong {
+    color: #FB923C;
+}
+
+
+/* =========================================================
+   TOTAL
+========================================================= */
+
+.addons-total-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.addons-total-row span {
+    color: #0f172a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.addons-total-row strong {
+    color: #FB923C;
+
+    font-size: 20px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   INFO CARD
+========================================================= */
+
+.addons-info-card {
+    padding: 17px;
+
+    border-color: #dbeaf1;
+
+    background: #f4fafc;
+}
+
+.addons-info-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #FB923C;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.addons-info-card p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.addons-error-card {
+    max-width: 500px;
+
+    margin: 60px auto;
+
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.addons-error-card h2 {
+    margin: 0 0 10px;
+
+    color: #ef4444;
+
+    font-size: 23px;
+}
+
+.addons-error-card p {
+    margin: 0 0 24px;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.addons-error-card button {
+    min-height: 46px;
+
+    padding: 0 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #FB923C;
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.addons-error-card button:hover {
+    background: #ea580c;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .addons-page {
+        padding-top: 32px;
+    }
+
+    .addons-layout {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .addons-summary-section {
+        position: static;
+    }
+
+    .addons-summary-card {
+        margin-bottom: 15px;
+    }
+
+    .addons-progress-line {
+        max-width: 75px;
+    }
+
+    .desktop-only-actions {
+        display: none !important;
+    }
+
+    .mobile-only-actions {
+        display: flex !important;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .mobile-only-actions button {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .addons-page {
+        padding: 24px 12px 55px;
+    }
+
+    .addons-progress-container,
+    .addons-header,
+    .addons-layout {
+        width: 100%;
+    }
+
+
+    /* Progress */
+
+    .addons-progress-container {
+        overflow: hidden;
+
+        margin-bottom: 25px;
+    }
+
+    .addons-progress {
+        width: max-content;
+
+        justify-content: flex-start;
+
+        padding: 3px 3px 8px;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+    }
+
+    .addons-progress::-webkit-scrollbar {
+        display: none;
+    }
+
+    .addons-progress-step {
+        min-width: 76px;
+    }
+
+    .addons-progress-step span {
+        font-size: 9px;
+    }
+
+    .addons-progress-number {
+        width: 28px;
+        height: 28px;
+
+        font-size: 11px;
+    }
+
+    .addons-progress-line {
+        min-width: 25px;
+        max-width: 40px;
+
+        margin: 0 4px 23px;
+    }
+
+
+    /* Header */
+
+    .addons-header {
+        flex-direction: column;
+
+        margin-bottom: 20px;
+
+        gap: 14px;
+    }
+
+    .addons-header h1 {
+        font-size: 23px;
+    }
+
+    .addons-header p {
+        font-size: 12px;
+    }
+
+    .addons-back-top-btn {
+        width: 100%;
+    }
+
+
+    /* Cards */
+
+    .addons-card,
+    .addons-summary-card {
+        padding: 17px;
+
+        border-radius: 12px;
+    }
+
+
+    /* Heading */
+
+    .addons-card-heading {
+        gap: 10px;
+
+        margin-bottom: 17px;
+    }
+
+    .addons-heading-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 18px;
+    }
+
+    .addons-card-heading h2 {
+        font-size: 16px;
+    }
+
+    .addons-card-heading p {
+        font-size: 11px;
+    }
+
+
+    /* Options */
+
+    .addons-option-card {
+        min-height: 67px;
+
+        padding: 12px;
+
+        grid-template-columns: 21px minmax(0, 1fr) auto;
+
+        gap: 9px;
+    }
+
+    .addons-option-content strong {
+        font-size: 12px;
+    }
+
+    .addons-option-content p {
+        font-size: 10px;
+    }
+
+    .addons-option-price {
+        font-size: 11px;
+    }
+
+
+    /* Pet */
+
+    .pet-toggle-row {
+        align-items: flex-start;
+
+        padding: 12px;
+    }
+
+    .pet-toggle-content strong {
+        font-size: 12px;
+    }
+
+    .pet-toggle-content p {
+        font-size: 10px;
+    }
+
+    .pet-switch {
+        width: 67px;
+        height: 32px;
+
+        font-size: 10px;
+    }
+
+    .pet-form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+
+    /* Toggles */
+
+    .addons-toggle-card {
+        grid-template-columns: 19px minmax(0, 1fr) auto;
+
+        gap: 9px;
+
+        padding: 12px;
+    }
+
+    .addons-toggle-content strong {
+        font-size: 12px;
+    }
+
+    .addons-toggle-content p {
+        font-size: 10px;
+    }
+
+    .addons-toggle-card>span {
+        font-size: 11px;
+    }
+
+
+    /* Buttons */
+
+    .addons-bottom-actions {
+        flex-direction: column-reverse;
+
+        gap: 9px;
+    }
+
+    .addons-secondary-btn,
+    .addons-primary-btn {
+        width: 100%;
+
+        min-height: 48px;
+    }
+
+
+    /* Summary */
+
+    .addons-summary-card h3 {
+        font-size: 15px;
+    }
+
+    .addons-summary-row {
+        font-size: 11px;
+    }
+
+    .addons-summary-row strong {
+        font-size: 11px;
+    }
+
+    .addons-total-row span {
+        font-size: 13px;
+    }
+
+    .addons-total-row strong {
+        font-size: 18px;
+    }
+
+    .addons-info-card {
+        padding: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .addons-page {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .addons-card,
+    .addons-summary-card {
+        padding: 14px;
+    }
+
+    .addons-option-card {
+        padding: 10px;
+    }
+
+    .addons-option-content strong {
+        font-size: 11px;
+    }
+
+    .addons-option-content p {
+        font-size: 9px;
+    }
+
+    .addons-option-price {
+        font-size: 10px;
+    }
+
+    .addons-card-heading h2 {
+        font-size: 15px;
+    }
+}

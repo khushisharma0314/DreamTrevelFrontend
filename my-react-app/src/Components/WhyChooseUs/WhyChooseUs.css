@@ -1,0 +1,913 @@
+/* =====================================================
+   WHY CHOOSE US SECTION
+===================================================== */
+
+.why-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 45px 20px 75px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+/* =====================================================
+   MAIN WRAPPER
+===================================================== */
+
+.why-wrapper {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.why-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.why-heading {
+  margin: 0;
+
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 800;
+
+  color: #1f2937;
+
+  letter-spacing: -0.6px;
+}
+
+
+/* =====================================================
+   HEADING UNDERLINE
+===================================================== */
+
+.why-heading-line {
+  display: flex;
+
+  width: 105px;
+  height: 4px;
+
+  margin: 13px auto 17px;
+
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+
+.line-dark {
+  width: 55%;
+  background: #1f2937;
+}
+
+
+.line-orange {
+  width: 45%;
+  background: #fb923c;
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.why-text {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  font-size: 15.5px;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: #64748b;
+}
+
+
+/* =====================================================
+   MAIN BENEFITS LAYOUT
+===================================================== */
+
+.why-benefits {
+  display: grid;
+
+  grid-template-columns: 1.15fr 1fr;
+
+  gap: 14px;
+
+  width: 100%;
+}
+
+
+/* =====================================================
+   BIG LEFT CARD
+===================================================== */
+
+.why-main-card {
+  position: relative;
+
+  min-height: 535px;
+
+  padding: 32px;
+
+  border-radius: 18px;
+
+  border: 1px solid #dbe5ef;
+
+  background:
+    radial-gradient(circle at 72% 40%,
+      rgba(251, 146, 60, 0.10),
+      transparent 32%),
+    linear-gradient(135deg,
+      #ffffff 0%,
+      #f8fbff 100%);
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+
+.why-main-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 35px rgba(31, 41, 55, 0.08);
+
+  border-color: #cbd9e8;
+}
+
+
+/* =====================================================
+   01 NUMBER
+===================================================== */
+
+.why-card-number {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 65px;
+  height: 48px;
+
+  padding: 0 15px;
+
+  border-radius: 13px;
+
+  background: #fff7ed;
+
+  color: #f97316;
+
+  font-size: 25px;
+  font-weight: 800;
+
+  line-height: 1;
+}
+
+
+/* =====================================================
+   MAIN CARD CONTENT
+===================================================== */
+
+.why-main-content {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  height: calc(100% - 48px);
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+
+/* =====================================================
+   MAIN INFO
+===================================================== */
+
+.why-main-info {
+  position: relative;
+
+  z-index: 5;
+
+  padding-top: 15px;
+}
+
+
+/* =====================================================
+   ICON BOX
+===================================================== */
+
+.why-icon-box {
+  width: 72px;
+  height: 72px;
+
+  border-radius: 16px;
+
+  background: #fff7ed;
+
+  border: 1px solid #ffedd5;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   ICON IMAGE
+===================================================== */
+
+.why-icon-box img {
+  width: 43px;
+  height: 43px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+/* =====================================================
+   MAIN ICON
+===================================================== */
+
+.main-icon {
+  margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   MAIN CARD TITLE
+===================================================== */
+
+.why-main-info h3 {
+  margin: 0 0 13px;
+
+  max-width: 330px;
+
+  font-size: 27px;
+
+  line-height: 1.18;
+
+  font-weight: 800;
+
+  color: #1f2937;
+}
+
+
+/* =====================================================
+   MAIN CARD DESCRIPTION
+===================================================== */
+
+.why-main-info>p {
+  max-width: 310px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  color: #64748b;
+}
+
+
+/* =====================================================
+   CHECK LIST
+===================================================== */
+
+.why-check-list {
+  margin-top: 25px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+
+/* =====================================================
+   CHECK ITEM
+===================================================== */
+
+.why-check-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+/* =====================================================
+   CHECK CIRCLE
+===================================================== */
+
+.why-check-item span {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff0df;
+
+  color: #f97316;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  flex-shrink: 0;
+}
+
+
+/* =====================================================
+   CHECK TEXT
+===================================================== */
+
+.why-check-item p {
+  margin: 0;
+
+  font-size: 13.5px;
+
+  color: #64748b;
+}
+
+
+/* =====================================================
+   MAIN VISUAL AREA
+===================================================== */
+
+.why-main-visual {
+  position: relative;
+
+  height: 100%;
+
+  min-height: 390px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =====================================================
+   DECORATIVE CIRCLES
+===================================================== */
+
+.why-circle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.why-circle.one {
+  width: 260px;
+  height: 260px;
+
+  right: 0;
+  top: 60px;
+
+  background: rgba(251, 146, 60, 0.10);
+}
+
+
+.why-circle.two {
+  width: 170px;
+  height: 170px;
+
+  left: 30px;
+  bottom: 30px;
+
+  background: rgba(219, 234, 254, 0.60);
+}
+
+
+/* =====================================================
+   SUPPORT PERSON IMAGE
+===================================================== */
+
+.why-support-image {
+  position: relative;
+
+  z-index: 3;
+
+  width: 100%;
+
+  max-width: 360px;
+
+  height: 390px;
+
+  object-fit: contain;
+
+  object-position: center bottom;
+
+  display: block;
+}
+
+
+/* =====================================================
+   RIGHT SIDE CARDS
+===================================================== */
+
+.why-side-cards {
+  display: grid;
+
+  grid-template-rows: repeat(3, 1fr);
+
+  gap: 14px;
+}
+
+
+/* =====================================================
+   RIGHT CARD
+===================================================== */
+
+.why-side-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 17px;
+
+  min-height: 169px;
+
+  padding: 24px;
+
+  box-sizing: border-box;
+
+  border-radius: 18px;
+
+  border: 1px solid #dbe5ef;
+
+  background:
+    linear-gradient(135deg,
+      #ffffff 0%,
+      #f9fbfd 100%);
+
+  transition: all 0.3s ease;
+}
+
+
+.why-side-card:hover {
+  transform: translateX(4px);
+
+  border-color: #f7c99f;
+
+  box-shadow:
+    0 12px 28px rgba(31, 41, 55, 0.08);
+}
+
+
+/* =====================================================
+   SIDE NUMBER
+===================================================== */
+
+.why-side-number {
+  position: absolute;
+
+  top: 17px;
+  left: 19px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 48px;
+  height: 37px;
+
+  padding: 0 10px;
+
+  border-radius: 12px;
+
+  background: #fff7ed;
+
+  color: #f97316;
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+
+/* =====================================================
+   SIDE ICON
+===================================================== */
+
+.why-side-card .why-icon-box {
+  width: 76px;
+  height: 76px;
+
+  margin-left: 50px;
+
+  border-radius: 15px;
+}
+
+
+.why-side-card .why-icon-box img {
+  width: 44px;
+  height: 44px;
+}
+
+
+/* =====================================================
+   SIDE CONTENT
+===================================================== */
+
+.why-side-content {
+  flex: 1;
+
+  padding-right: 35px;
+}
+
+
+/* =====================================================
+   SIDE TITLE
+===================================================== */
+
+.why-side-content h3 {
+  margin: 0 0 9px;
+
+  font-size: 20px;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  color: #1f2937;
+}
+
+
+/* =====================================================
+   SIDE DESCRIPTION
+===================================================== */
+
+.why-side-content p {
+  margin: 0;
+
+  max-width: 390px;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: #64748b;
+}
+
+
+/* =====================================================
+   ARROW
+===================================================== */
+
+.why-arrow {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #fff1e6;
+
+  color: #f97316;
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  flex-shrink: 0;
+
+  transition: all 0.3s ease;
+}
+
+
+.why-side-card:hover .why-arrow {
+  background: #fb923c;
+
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   TABLET - 1050px
+===================================================== */
+
+@media (max-width: 1050px) {
+
+  .why-section {
+    padding: 40px 20px 65px;
+  }
+
+  .why-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .why-main-card {
+    min-height: 440px;
+  }
+
+  .why-main-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-side-cards {
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: 1fr;
+  }
+
+  .why-side-card {
+    min-height: 210px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 25px 20px;
+  }
+
+  .why-side-card .why-icon-box {
+    margin: 35px 0 5px;
+  }
+
+  .why-side-content {
+    padding-right: 0;
+  }
+
+  .why-arrow {
+    display: none;
+  }
+}
+
+
+/* =====================================================
+   TABLET - 800px
+===================================================== */
+
+@media (max-width: 800px) {
+
+  .why-heading {
+    font-size: 30px;
+  }
+
+  .why-side-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .why-side-card {
+    min-height: 145px;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    padding: 22px;
+  }
+
+  .why-side-card .why-icon-box {
+    margin: 0 0 0 45px;
+  }
+
+  .why-side-content {
+    padding-right: 35px;
+  }
+
+  .why-arrow {
+    display: flex;
+  }
+}
+
+
+/* =====================================================
+   MOBILE - 600px
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .why-section {
+    padding: 35px 15px 50px;
+  }
+
+  .why-header {
+    margin-bottom: 30px;
+  }
+
+  .why-heading {
+    font-size: 25px;
+
+    line-height: 1.25;
+  }
+
+  .why-heading-line {
+    width: 85px;
+
+    height: 3px;
+
+    margin: 11px auto 14px;
+  }
+
+  .why-text {
+    font-size: 14px;
+
+    line-height: 1.55;
+  }
+
+
+  /* Main card */
+
+  .why-main-card {
+    min-height: auto;
+
+    padding: 23px;
+
+    border-radius: 16px;
+  }
+
+  .why-card-number {
+    min-width: 55px;
+
+    height: 40px;
+
+    font-size: 21px;
+  }
+
+  .why-main-content {
+    grid-template-columns: 1fr;
+
+    height: auto;
+  }
+
+  .why-main-info {
+    padding-top: 20px;
+  }
+
+  .why-main-info h3 {
+    font-size: 24px;
+  }
+
+  .why-main-info>p {
+    font-size: 14px;
+  }
+
+
+  /* Check list */
+
+  .why-check-list {
+    margin-top: 20px;
+
+    gap: 9px;
+  }
+
+
+  /* Hide decorative visual image on phone screens - only show essential content in 1 col */
+  .why-main-visual {
+    display: none !important;
+  }
+
+
+  /* Side cards */
+
+  .why-side-cards {
+    gap: 12px;
+  }
+
+  .why-side-card {
+    min-height: 135px;
+
+    padding: 20px 15px;
+
+    gap: 12px;
+
+    border-radius: 15px;
+  }
+
+  .why-side-number {
+    top: 13px;
+
+    left: 13px;
+
+    min-width: 42px;
+
+    height: 32px;
+
+    font-size: 17px;
+  }
+
+  .why-side-card .why-icon-box {
+    width: 60px;
+
+    height: 60px;
+
+    margin-left: 35px;
+  }
+
+  .why-side-card .why-icon-box img {
+    width: 34px;
+
+    height: 34px;
+  }
+
+  .why-side-content {
+    padding-right: 0;
+  }
+
+  .why-side-content h3 {
+    font-size: 16px;
+
+    margin-bottom: 6px;
+  }
+
+  .why-side-content p {
+    font-size: 13px;
+
+    line-height: 1.5;
+  }
+
+  .why-arrow {
+    width: 34px;
+
+    height: 34px;
+
+    font-size: 20px;
+  }
+}
+
+
+/* =====================================================
+   VERY SMALL MOBILE - 400px
+===================================================== */
+
+@media (max-width: 400px) {
+
+  .why-heading {
+    font-size: 23px;
+  }
+
+  .why-main-info h3 {
+    font-size: 22px;
+  }
+
+  .why-side-card {
+    min-height: 125px;
+  }
+
+  .why-side-card .why-icon-box {
+    width: 54px;
+
+    height: 54px;
+
+    margin-left: 32px;
+  }
+
+  .why-side-card .why-icon-box img {
+    width: 30px;
+
+    height: 30px;
+  }
+
+  .why-side-content h3 {
+    font-size: 15px;
+  }
+
+  .why-side-content p {
+    font-size: 12px;
+  }
+}

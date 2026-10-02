@@ -1,0 +1,629 @@
+/* =========================================================
+   DISCLAIMER PAGE
+========================================================= */
+
+.disclaimer-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #ffffff;
+
+    font-family: "Roboto", sans-serif;
+    color: #1F2937;
+
+    padding-top: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADING SECTION
+========================================================= */
+
+.disclaimer-heading-section {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 24px 30px 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.disclaimer-heading-section h1 {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 40px;
+    line-height: 1.2;
+
+    /*
+       Medium bold
+    */
+    font-weight: 550;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.disclaimer-breadcrumb {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    margin-top: 14px;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.disclaimer-breadcrumb a {
+    color: #222222;
+
+    text-decoration: none;
+
+    font-weight: 400;
+}
+
+.disclaimer-breadcrumb a:hover {
+    color: #000000;
+}
+
+.disclaimer-breadcrumb span:nth-child(2) {
+    color: #777777;
+}
+
+.disclaimer-breadcrumb span:nth-child(3) {
+    color: #222222;
+
+    /*
+       Disclaimer black hi rahega
+    */
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   LINE BELOW BREADCRUMB
+========================================================= */
+
+.disclaimer-heading-line {
+    width: 100%;
+
+    height: 1px;
+
+    background: #e1e1e1;
+
+    margin-top: 16px;
+}
+
+
+/* =========================================================
+   MAIN CONTENT
+========================================================= */
+
+.disclaimer-content {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    /*
+       Effective Date ko breadcrumb line ke close rakha gaya hai
+    */
+    padding: 20px 30px 60px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EFFECTIVE DATE
+========================================================= */
+
+.disclaimer-effective-date {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #444444;
+}
+
+.disclaimer-effective-date strong {
+    font-weight: 550;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.disclaimer-intro {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: #444444;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.disclaimer-section {
+    margin-top: 28px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.disclaimer-section h2 {
+    margin: 0 0 10px;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 24px;
+
+    line-height: 1.3;
+
+    /*
+       Pehle se thoda kam, lekin clearly bold
+    */
+    font-weight: 550;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+========================================================= */
+
+.disclaimer-section p {
+    margin: 0;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: #444444;
+}
+
+
+/*
+   IMPORTANT:
+
+   Same section ke paragraphs ke beech extra margin nahi hai.
+   Isliye ek paragraph ke baad unnecessary line gap nahi aayega.
+*/
+
+.disclaimer-section p+p {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   LIST
+========================================================= */
+
+.disclaimer-section ul {
+    margin: 5px 0 0;
+
+    padding-left: 25px;
+}
+
+.disclaimer-section li {
+    margin-bottom: 5px;
+
+    padding-left: 3px;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    font-weight: 400;
+
+    color: #444444;
+}
+
+.disclaimer-section li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   CONTACT US
+========================================================= */
+
+.disclaimer-contact {
+    /*
+       Contact section ke andar koi border/line nahi
+    */
+    border: none;
+}
+
+
+/*
+   Contact section ke saare paragraphs ek saath
+*/
+
+.disclaimer-contact p {
+    margin: 0;
+
+    padding: 0;
+}
+
+
+/* =========================================================
+   FARENEXA
+========================================================= */
+
+.disclaimer-contact .disclaimer-company {
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   CORPORATE + REGISTERED OFFICE
+========================================================= */
+
+/*
+   IMPORTANT:
+   Sirf label bold hoga.
+   Address normal rahega.
+*/
+
+.disclaimer-contact strong {
+    font-family: "Roboto", sans-serif;
+
+    /*
+       600 se clearly bold dikhega
+    */
+    font-weight: 600;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   EMAIL + TOLL FREE
+========================================================= */
+
+.disclaimer-contact a {
+    color: #1F2937;
+
+    text-decoration: none;
+
+    font-weight: 400;
+}
+
+.disclaimer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FINAL STATEMENT
+========================================================= */
+
+.disclaimer-final {
+    margin: 30px 0 0;
+
+    padding: 0;
+
+    /*
+       Contact ke baad koi horizontal line nahi
+    */
+    border: none;
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.65;
+
+    font-weight: 400;
+
+    color: #1F2937;
+}
+
+
+/* =========================================================
+   MEDIUM SCREEN
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    .disclaimer-page {
+        padding-top: 0;
+    }
+
+    .disclaimer-heading-section {
+        padding: 20px 28px 0;
+    }
+
+    .disclaimer-content {
+        padding: 18px 28px 55px;
+    }
+
+    .disclaimer-heading-section h1 {
+        font-size: 36px;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-section h2 {
+        font-size: 23px;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-intro,
+    .disclaimer-section p,
+    .disclaimer-section li,
+    .disclaimer-final {
+        font-size: 15.5px;
+    }
+
+    .disclaimer-section {
+        margin-top: 25px;
+    }
+
+    .disclaimer-section p {
+        margin: 0;
+
+        line-height: 1.65;
+    }
+
+    .disclaimer-contact p {
+        margin: 0;
+    }
+
+    .disclaimer-contact strong {
+        font-weight: 600;
+    }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .disclaimer-page {
+        padding-top: 0;
+    }
+
+    .disclaimer-heading-section {
+        padding: 18px 22px 0;
+    }
+
+    .disclaimer-content {
+        padding: 16px 22px 45px;
+    }
+
+    .disclaimer-heading-section h1 {
+        font-size: 32px;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-breadcrumb {
+        margin-top: 10px;
+
+        font-size: 13px;
+    }
+
+    .disclaimer-heading-line {
+        margin-top: 14px;
+    }
+
+    .disclaimer-effective-date {
+        font-size: 14px;
+
+        line-height: 1.5;
+    }
+
+    .disclaimer-intro {
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .disclaimer-section {
+        margin-top: 24px;
+    }
+
+    .disclaimer-section h2 {
+        margin-bottom: 9px;
+
+        font-size: 21px;
+
+        line-height: 1.3;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-section p {
+        margin: 0;
+
+        font-size: 15px;
+
+        line-height: 1.65;
+    }
+
+    .disclaimer-section p+p {
+        margin-top: 0;
+    }
+
+    .disclaimer-section ul {
+        margin: 4px 0 0;
+
+        padding-left: 23px;
+    }
+
+    .disclaimer-section li {
+        margin-bottom: 5px;
+
+        font-size: 15px;
+
+        line-height: 1.55;
+    }
+
+    .disclaimer-contact p {
+        margin: 0;
+    }
+
+    .disclaimer-contact strong {
+        font-weight: 600;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .disclaimer-page {
+        padding-top: 0;
+    }
+
+    .disclaimer-heading-section {
+        padding: 16px 16px 0;
+    }
+
+    .disclaimer-content {
+        padding: 14px 16px 40px;
+    }
+
+    .disclaimer-heading-section h1 {
+        font-size: 28px;
+
+        line-height: 1.2;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-breadcrumb {
+        margin-top: 8px;
+
+        gap: 7px;
+
+        font-size: 12px;
+    }
+
+    .disclaimer-heading-line {
+        margin-top: 12px;
+    }
+
+    .disclaimer-effective-date {
+        font-size: 13px;
+
+        line-height: 1.5;
+    }
+
+    .disclaimer-intro {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .disclaimer-section {
+        margin-top: 22px;
+    }
+
+    .disclaimer-section h2 {
+        margin-bottom: 8px;
+
+        font-size: 20px;
+
+        line-height: 1.3;
+
+        font-weight: 550;
+    }
+
+    .disclaimer-section p {
+        margin: 0;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .disclaimer-section p+p {
+        margin-top: 0;
+    }
+
+    .disclaimer-section ul {
+        margin: 4px 0 0;
+
+        padding-left: 21px;
+    }
+
+    .disclaimer-section li {
+        margin-bottom: 4px;
+
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+    .disclaimer-contact p {
+        margin: 0;
+    }
+
+    .disclaimer-contact strong {
+        font-weight: 600;
+    }
+
+    .disclaimer-final {
+        margin-top: 25px;
+
+        padding-top: 0;
+
+        border: none;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+}

@@ -1,0 +1,1546 @@
+/* =========================================================
+   FLIGHT SECTION
+========================================================= */
+
+.flight-section {
+  width: 100%;
+  background: transparent;
+  padding: 0 20px 48px;
+  position: relative;
+  z-index: 20;
+  margin-top: -210px;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.flight-container {
+  width: 95%;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* =========================================================
+   DESKTOP FORM
+========================================================= */
+
+.desktop-flight-form {
+  display: block;
+  background: rgba(248, 250, 252, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 18px;
+  min-height: 176px;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 10px 40px rgba(15, 23, 42, 0.22);
+
+  overflow: visible;
+  position: relative;
+}
+
+.hero-form-tabs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px 0;
+}
+
+.hero-form-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1F2937;
+  background: transparent;
+}
+
+.hero-form-tab.is-active {
+  background: #1F2937;
+  color: #ffffff;
+}
+
+.hero-form-tab.is-disabled {
+  color: #64748b;
+  cursor: default;
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.form-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  background: transparent;
+
+  padding: 12px 22px 8px;
+  min-height: 48px;
+
+  border-radius: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+
+  position: relative;
+  z-index: 30;
+}
+
+
+/* =========================================================
+   TOP SELECTOR
+========================================================= */
+
+.top-selector-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #334155;
+  cursor: pointer;
+
+  position: relative;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.selector-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FB923C;
+  flex-shrink: 0;
+}
+
+.traveler-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+/* =========================================================
+   TOP SELECT
+========================================================= */
+
+.top-select {
+  border: none;
+  background: transparent;
+
+  font-size: 14.5px;
+  font-weight: 700;
+
+  color: #1e293b;
+
+  cursor: pointer;
+  outline: none;
+
+  font-family: inherit;
+  letter-spacing: 0.25px;
+
+  padding-right: 4px;
+}
+
+
+/* =========================================================
+   TRAVELER BUTTON
+========================================================= */
+
+.traveler-selector {
+  position: relative;
+}
+
+.traveler-main-button {
+  border: none;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 3px 2px;
+
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.traveler-main-button:focus {
+  outline: none;
+}
+
+.traveler-main-text {
+  font-size: 14.5px;
+  font-weight: 700;
+
+  color: #1e293b;
+
+  letter-spacing: 0.25px;
+}
+
+.traveler-arrow {
+  font-size: 12px;
+  color: #64748b;
+
+  margin-left: 1px;
+  position: relative;
+  top: -1px;
+}
+
+
+/* =========================================================
+   TRAVELER DROPDOWN
+========================================================= */
+
+.traveler-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 290px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px;
+  z-index: 99999;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    0 4px 10px rgba(0, 0, 0, 0.05);
+  animation: calFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.traveler-dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.traveler-dropdown-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.traveler-header-close-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: none;
+  background: #f1f5f9;
+  color: #64748b;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.traveler-header-close-btn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+
+/* =========================================================
+   TRAVELER OPTION
+========================================================= */
+
+.traveler-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 11px 2px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+
+/* =========================================================
+   TRAVELER LABEL
+========================================================= */
+
+.traveler-option-left {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  line-height: 1.2;
+}
+
+.traveler-option-title {
+  display: block;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #1e293b;
+
+  margin-bottom: 3px;
+}
+
+.traveler-option-subtitle {
+  display: block;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================================
+   COUNTER
+========================================================= */
+
+.traveler-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.counter-button {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  font-size: 18px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.counter-button:hover {
+  background: #fff7ed;
+  border-color: #FB923C;
+  color: #FB923C;
+}
+
+.counter-number {
+  min-width: 18px;
+
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #1e293b;
+}
+
+
+/* =========================================================
+   CLOSE BUTTON
+========================================================= */
+
+.traveler-close-button {
+  width: 100%;
+  height: 40px;
+
+  border: none;
+
+  background: #1F2937;
+  color: #ffffff !important;
+
+  border-radius: 8px;
+
+  margin-top: 14px;
+
+  font-size: 14px;
+  font-weight: 700;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  letter-spacing: 0.3px;
+
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(31, 41, 55, 0.18);
+}
+
+.traveler-close-button:hover {
+  background: #FB923C;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(251, 146, 60, 0.35);
+}
+
+
+/* =========================================================
+   DESKTOP FORM ROW
+========================================================= */
+
+.desktop-form-row {
+  display: flex;
+  align-items: center;
+
+  padding: 16px 22px 22px;
+
+  gap: 14px;
+
+  background: transparent;
+
+  border-radius: 0 0 18px 18px;
+
+  min-height: 110px;
+}
+
+
+/* =========================================================
+   LOCATION GROUP
+========================================================= */
+
+.location-group {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  flex: 2.2;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   INPUT FIELDSET
+========================================================= */
+
+.input-fieldset {
+  border: 1px solid #cbd5e1;
+
+  border-radius: 10px;
+
+  padding: 5px 16px 6px;
+
+  margin: 0;
+
+  position: relative;
+
+  background: #ffffff;
+
+  height: 62px;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input-fieldset:focus-within {
+  border-color: #FB923C;
+
+  box-shadow:
+    0 0 0 1px #FB923C;
+}
+
+.input-fieldset legend {
+  font-size: 12.5px;
+
+  font-weight: 600;
+
+  color: #64748b;
+
+  padding: 0 6px;
+
+  margin: 0;
+
+  line-height: 1;
+
+  float: none;
+
+  width: auto;
+}
+
+
+/* =========================================================
+   FROM
+========================================================= */
+
+.fieldset-from {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  flex: 1;
+
+  border-right: none;
+}
+
+
+/* =========================================================
+   TO
+========================================================= */
+
+.fieldset-to {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  flex: 1;
+}
+
+
+/* =========================================================
+   SWAP
+========================================================= */
+
+.swap-icon-btn {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -25%);
+
+  width: 32px;
+  height: 32px;
+
+  background: #ffffff;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.08);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.swap-icon-btn:hover {
+  background: #fff7ed;
+
+  border-color: #FB923C;
+  color: #FB923C;
+
+  transform:
+    translate(-50%, -25%) rotate(180deg);
+}
+
+
+/* =========================================================
+   DATE
+========================================================= */
+
+.fieldset-date {
+  flex: 1.15;
+  position: relative;
+}
+
+.disabled-fieldset {
+  background: #f8fafc;
+  opacity: 0.7;
+}
+
+
+/* =========================================================
+   FIELD WRAPPER
+========================================================= */
+
+.fieldset-input-wrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  height: 38px;
+
+  position: relative;
+}
+
+.date-clickable {
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* =========================================================
+   FIELD ICON
+========================================================= */
+
+.field-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   TEXT INPUT
+========================================================= */
+
+.text-input {
+  border: none;
+  outline: none;
+
+  font-size: 15.5px;
+  font-weight: 600;
+
+  color: #0f172a;
+
+  width: 100%;
+
+  background: transparent;
+
+  font-family: inherit;
+}
+
+.text-input::placeholder {
+  color: #0f172a;
+
+  font-weight: 500;
+
+  opacity: 1;
+}
+
+
+/* =========================================================
+   CITY AUTOCOMPLETE
+========================================================= */
+
+.location-autocomplete-wrapper {
+  position: relative;
+}
+
+
+/* =========================================================
+   CITY SUGGESTION BOX
+========================================================= */
+
+.city-suggestions {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: -10px;
+
+  width: 310px;
+
+  max-height: 270px;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe3ea;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08),
+    0 15px 35px rgba(0, 0, 0, 0.12);
+
+  z-index: 99999;
+
+  padding: 6px 0;
+}
+
+
+/* =========================================================
+   SUGGESTION ITEM
+========================================================= */
+
+.city-suggestion-item {
+  width: 100%;
+
+  border: none;
+
+  background: #ffffff;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 12px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  transition: background 0.15s ease;
+}
+
+.city-suggestion-item:hover {
+  background: #f1f7fb;
+}
+
+
+/* =========================================================
+   SUGGESTION PIN
+========================================================= */
+
+.suggestion-pin {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   SUGGESTION CONTENT
+========================================================= */
+
+.suggestion-content {
+  display: flex;
+
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.suggestion-content strong {
+  font-size: 13.5px;
+
+  color: #1e293b;
+
+  font-weight: 700;
+}
+
+.suggestion-content small {
+  font-size: 11px;
+
+  color: #64748b;
+
+  margin-top: 2px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.suggestion-loading {
+  padding: 15px;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   NO RESULT
+========================================================= */
+
+.no-suggestion {
+  padding: 15px;
+
+  text-align: center;
+
+  font-size: 13px;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================================
+   DATE TEXT
+========================================================= */
+
+.date-display-text {
+  font-size: 15.5px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+
+  white-space: nowrap;
+
+  user-select: none;
+}
+
+.text-muted {
+  color: #94a3b8 !important;
+}
+
+
+/* =========================================================
+   CUSTOM CALENDAR POPUP
+========================================================= */
+
+.custom-calendar-popup {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  top: auto;
+  left: 0;
+  width: 310px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 16px 14px 14px;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.15),
+    0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 99999;
+  user-select: none;
+  animation: calFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes calFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 4px;
+}
+
+.cal-month-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.cal-nav-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #1f2937;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  line-height: 1;
+}
+
+.cal-nav-btn:hover:not(:disabled) {
+  background: #FB923C;
+  color: #ffffff;
+  border-color: #FB923C;
+}
+
+.cal-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.cal-weekday {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #64748b;
+  padding: 4px 0;
+}
+
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-day-cell {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-day {
+  visibility: hidden;
+}
+
+.cal-day-btn {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #1f2937;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.cal-day-btn:hover:not(:disabled):not(.selected-day) {
+  background: #fff7ed;
+  color: #FB923C;
+}
+
+.cal-day-btn.selected-day {
+  background: #FB923C !important;
+  color: #ffffff !important;
+  font-weight: 700;
+  box-shadow: 0 3px 8px rgba(251, 146, 60, 0.4);
+}
+
+.cal-day-btn.today-day:not(.selected-day) {
+  border: 1.5px solid #FB923C;
+  color: #FB923C;
+  font-weight: 700;
+}
+
+.cal-day-btn.disabled-day {
+  color: #cbd5e1;
+  cursor: not-allowed;
+  background: transparent;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+.search-btn-wrapper {
+  flex: 0 0 190px;
+  min-width: 180px;
+}
+
+.desktop-search-btn {
+  width: 100%;
+  height: 62px;
+  background: #FB923C;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(251, 146, 60, 0.35);
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
+}
+
+.desktop-search-btn:hover {
+  background: #1f2937;
+  box-shadow: 0 4px 14px rgba(31, 41, 55, 0.25);
+  transform: translateY(-1px);
+}
+
+.desktop-search-btn:active {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE FORM
+========================================================= */
+
+.mobile-flight-form {
+  display: none;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 24px 22px;
+
+  border: 1px solid #dfe5eb;
+
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.05),
+    0 10px 25px rgba(0, 0, 0, 0.10),
+    0 18px 40px rgba(0, 0, 0, 0.07);
+
+  position: relative;
+
+  z-index: 20;
+}
+
+
+/* =========================================================
+   MOBILE RADIO
+========================================================= */
+
+.mobile-radio-group {
+  display: flex;
+
+  align-items: center;
+
+  gap: 28px;
+
+  margin-bottom: 18px;
+}
+
+.mobile-radio-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1e293b;
+
+  cursor: pointer;
+}
+
+.mobile-radio-label input[type="radio"] {
+  width: 18px;
+
+  height: 18px;
+
+  accent-color: #FB923C;
+
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   MOBILE FORM BOX
+========================================================= */
+
+.mobile-form-box {
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  overflow: visible;
+
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   MOBILE ROW
+========================================================= */
+
+.mobile-box-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  padding: 12px 16px;
+
+  align-items: center;
+
+  min-height: 65px;
+}
+
+.no-bottom-border {
+  border-bottom: none !important;
+}
+
+
+/* =========================================================
+   MOBILE CELL
+========================================================= */
+
+.mobile-box-cell {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  min-width: 0;
+}
+
+.mobile-box-cell.left-cell {
+  padding-right: 12px;
+
+  border-right: 1px solid #f1f5f9;
+}
+
+.mobile-box-cell.right-cell {
+  padding-left: 12px;
+
+  align-items: flex-end;
+
+  text-align: right;
+}
+
+
+/* =========================================================
+   MOBILE LABEL
+========================================================= */
+
+.cell-label {
+  font-size: 12.5px;
+
+  color: #718096;
+
+  font-weight: 500;
+
+  margin-bottom: 4px;
+}
+
+
+/* =========================================================
+   MOBILE AUTOCOMPLETE
+========================================================= */
+
+.mobile-autocomplete-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   MOBILE CITY SUGGESTIONS
+========================================================= */
+
+.mobile-city-suggestions {
+  position: absolute;
+
+  top: calc(100% + 8px);
+
+  left: 0;
+
+  width: 280px;
+
+  max-height: 250px;
+
+  overflow-y: auto;
+
+  background: #ffffff;
+
+  border: 1px solid #dbe3ea;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08),
+    0 15px 35px rgba(0, 0, 0, 0.12);
+
+  z-index: 99999;
+}
+
+.to-mobile-suggestions {
+  right: 0;
+
+  left: auto;
+}
+
+
+/* =========================================================
+   MOBILE INPUT
+========================================================= */
+
+.mobile-cell-input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1a202c;
+
+  background: transparent;
+
+  padding: 0;
+
+  font-family: inherit;
+}
+
+.mobile-cell-input::placeholder {
+  color: #1a202c;
+
+  font-weight: 500;
+
+  opacity: 1;
+}
+
+
+/* =========================================================
+   MOBILE DATE
+========================================================= */
+
+.mobile-date-wrapper {
+  position: relative;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  width: 100%;
+}
+
+.mobile-date-val {
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1a202c;
+
+  display: block;
+}
+
+.mobile-cal-popup {
+  width: 290px;
+  top: calc(100% + 8px);
+}
+
+.mobile-cal-left {
+  left: 0;
+  right: auto;
+}
+
+.mobile-cal-right {
+  right: 0;
+  left: auto;
+}
+
+
+/* =========================================================
+   MOBILE SELECT
+========================================================= */
+
+.mobile-cell-select {
+  border: none;
+
+  outline: none;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1a202c;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  padding: 0;
+
+  font-family: inherit;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   MOBILE PAX
+========================================================= */
+
+.mobile-pax-button {
+  border: none;
+
+  background: transparent;
+
+  padding: 0;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  color: #1a202c;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  justify-content: flex-end;
+}
+
+
+/* =========================================================
+   MOBILE TRAVELER
+========================================================= */
+
+.mobile-traveler-dropdown {
+  margin-top: 10px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce3ea;
+
+  border-radius: 10px;
+
+  padding: 14px;
+
+  box-shadow:
+    0 5px 12px rgba(0, 0, 0, 0.08),
+    0 12px 30px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   MOBILE SEARCH
+========================================================= */
+
+.mobile-search-btn {
+  width: 100%;
+
+  height: 52px;
+
+  background: #FB923C;
+
+  color: #ffffff;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 4px 14px rgba(251, 146, 60, 0.35);
+
+  transition:
+    background 0.2s ease,
+    transform 0.15s ease;
+}
+
+.mobile-search-btn:hover {
+  background: #1f2937;
+}
+
+.mobile-search-btn:active {
+  transform: translateY(1px);
+}
+
+
+/* =========================================================
+   TEXT ALIGNMENT
+========================================================= */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* =========================================================
+   RESPONSIVE 1200
+========================================================= */
+
+@media (max-width: 1200px) and (min-width: 993px) {
+
+  .flight-container {
+    width: 97%;
+  }
+
+  .desktop-form-row {
+    gap: 8px;
+
+    padding: 18px 16px 20px;
+  }
+
+  .form-top-bar {
+    gap: 24px;
+
+    padding: 13px 18px;
+  }
+
+  .text-input,
+  .date-display-text {
+    font-size: 13.5px;
+  }
+
+  .desktop-search-btn {
+    font-size: 14px;
+  }
+
+  .city-suggestions {
+    width: 270px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 992px) {
+
+  .flight-section {
+    padding: 0 16px 45px;
+    margin-top: -24px;
+  }
+
+  .flight-container {
+    width: 96%;
+  }
+
+  .desktop-flight-form {
+    display: none;
+  }
+
+  .mobile-flight-form {
+    display: block;
+  }
+}
+
+
+/* =========================================================
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .flight-section {
+    margin-top: 16px !important;
+    padding: 0 16px 35px;
+  }
+
+  .flight-container {
+    width: 98%;
+  }
+
+  .mobile-flight-form {
+    padding: 22px 18px;
+  }
+
+  .mobile-city-suggestions {
+    width: 250px;
+  }
+}
+
+
+/* =========================================================
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .flight-section {
+    margin-top: 12px !important;
+    padding: 0 10px 30px;
+  }
+
+  .flight-container {
+    width: 100%;
+  }
+
+  .mobile-flight-form {
+    padding: 20px 14px;
+
+    border-radius: 12px;
+  }
+
+  .mobile-box-row {
+    padding: 11px 12px;
+
+    min-height: 63px;
+  }
+
+  .cell-label {
+    font-size: 11.5px;
+  }
+
+  .mobile-cell-input,
+  .mobile-date-val,
+  .mobile-cell-select,
+  .mobile-pax-button {
+    font-size: 14px;
+  }
+
+  .traveler-dropdown {
+    width: 270px;
+  }
+
+  .mobile-city-suggestions {
+    width: 230px;
+  }
+}

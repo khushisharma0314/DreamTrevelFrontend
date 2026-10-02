@@ -1,0 +1,229 @@
+/* =========================================
+   FLY ANYWHERE SECTION - CHARCOAL & CORAL
+========================================= */
+
+.fly-anywhere-section {
+    width: 100%;
+    background: #ffffff;
+    padding: 70px 0 85px;
+    overflow: hidden;
+}
+
+.fly-anywhere-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.fly-anywhere-content {
+    width: 55%;
+    position: relative;
+    z-index: 2;
+}
+
+.fly-anywhere-content h1 {
+    margin: 0;
+    color: #1F2937;
+    font-family: "Plus Jakarta Sans", "Segoe UI", Inter, sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    white-space: normal;
+}
+
+
+/* =========================================
+   HEADING LINE
+========================================= */
+
+.fly-heading-line {
+    display: flex;
+    align-items: center;
+    width: 195px;
+    height: 4px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.fly-blue-line {
+    display: block;
+    width: 110px;
+    height: 4px;
+    background: #1f2937;
+}
+
+.fly-orange-line {
+    display: block;
+    width: 85px;
+    height: 4px;
+    background: #FB923C;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.fly-anywhere-content p {
+    margin: 0 0 16px;
+    color: #64748b;
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 15.5px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   CALL BUTTON
+========================================= */
+
+.fly-call-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    padding: 16px 32px;
+    min-width: 360px;
+    border: none;
+    border-radius: 12px;
+    background: #FB923C;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:
+        "Segoe UI",
+        Inter,
+        sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(251, 146, 60, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fly-call-button:hover {
+    background: #1f2937;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(31, 41, 55, 0.25);
+}
+
+.fly-phone-icon {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+
+/* =========================================
+   RIGHT IMAGE AREA
+========================================= */
+
+.fly-anywhere-images {
+    width: 45%;
+    height: 520px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.fly-single-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(31, 41, 55, 0.1);
+    border: 6px solid #ffffff;
+}
+
+.fly-single-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================================
+   RESPONSIVE QUERIES
+========================================= */
+
+/* TABLET (769px to 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .fly-anywhere-container {
+        gap: 30px;
+        padding: 0 30px;
+    }
+
+    .fly-anywhere-content {
+        width: 55%;
+    }
+
+    .fly-anywhere-content h1 {
+        font-size: 28px;
+    }
+
+    .fly-anywhere-images {
+        width: 45%;
+        height: 380px;
+    }
+}
+
+/* MOBILE PHONES (<= 768px): Hide extra image, show essential text & call button in 1 clean col */
+@media (max-width: 768px) {
+    .fly-anywhere-section {
+        padding: 40px 16px 50px;
+    }
+
+    .fly-anywhere-container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+        gap: 0;
+    }
+
+    .fly-anywhere-content {
+        width: 100%;
+    }
+
+    .fly-anywhere-content h1 {
+        font-size: 24px;
+        line-height: 1.25;
+        margin-bottom: 12px;
+    }
+
+    .fly-anywhere-content p {
+        font-size: 14px;
+        line-height: 1.55;
+        margin-bottom: 16px;
+    }
+
+    .fly-call-button {
+        width: 100%;
+        min-width: 0;
+        justify-content: center;
+        padding: 13px 20px;
+        font-size: 15px;
+    }
+
+    /* Hide image on phones */
+    .fly-anywhere-images {
+        display: none !important;
+    }
+}

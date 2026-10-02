@@ -1,0 +1,219 @@
+.clr{clear:both;}
+.sliderbox{width:100%;height:auto;padding:0;margin:auto;position:relative;}
+.desktop_ticket{position:absolute;width:100%;height:auto;padding:0;margin:auto;bottom:-96px; z-index:1;}
+.mobile_ticket{display:none;}
+
+.search-panel{width:100%;height:auto;padding:0;margin:auto;}
+.search-fly {width:100%;padding:0; background:#fff;box-shadow:0px 0px 15px #00000050;margin-top: 282px;border-radius:10px;}
+.form_sec {background:#f9f9f9;width: 100%;padding:11px 15px;border-radius:10px 10px 0 0;}
+.flight-row {width: 100%;height: auto;padding:15px 20px;margin: auto;background:#fff; border-radius:0 0 10px 10px;}
+
+.flight-row ::placeholder {color:#000;opacity: 1; /* Firefox */}
+.flight-row ::-ms-input-placeholder { /* Edge 12-18 */color:#000;}
+
+.flight_shedule .form-control::placeholder {color: rgb(54, 54, 54);}
+.flight_shedule input.form-control {font-size: 15px;font-weight: 500;height: 48px; border: none;}
+.search-fly .form-group {margin-right:40px;display: inline-block;margin-bottom: 0;}
+
+.form-control:focus{border-color: none;box-shadow: none;}
+
+.flight-row .searchcol-1 {width: 22%;height: auto;padding:0;margin: auto;float: left;position: relative;border-right: solid 0px #e1e1e1;}
+.flight-row .searchcol-2 {width: 25px;height: auto;padding:0;margin: auto;float: left;position: absolute; z-index:1; top:25px;right:-12px;}
+.flight-row .searchcol-3 {width: 22%;height: auto;padding:0;margin: auto;float: left;border-right: solid 0px #e1e1e1;position: relative;}
+.flight-row .searchcol-4 {width: 19%;height: auto; padding: 0 0 0 1%;margin: auto;float: left;position: relative;}
+.flight-row .searchcol-5 {width: 19%;height: auto;padding: 0 0 0 1%;margin: auto;float: left;border-left: solid 0px #e1e1e1;position: relative;}
+.flight-row .searchcol-6 {width: 17%;height: auto;padding:7px 0 0 1%;margin: auto;float: left;}
+
+.flight-row fieldset{border: 1px groove #aaa !important;padding: 0 7px 0 7px !important;margin:0 !important;border-radius:5px;-webkit-box-shadow:  0px 0px 0px 0px #000;box-shadow:  0px 0px 0px 0px #000;}
+.flight-row legend{width:auto;padding:0 7px;margin:0;font-size: 13px !important;color: #666;text-align: left !important;font-weight:600;font-family: Manrope !important;border-bottom:none;float: none !important;}
+
+.flight-row .bradius-rtb{border-radius:5px 0 0 5px;}
+.flight-row .bradius-ltb{border-radius:0 5px 5px 0;}
+
+
+.se-label{font-size:15px;color:#313131; font-weight:600;}
+
+#FormControlSelect1 {background-image: url(https://farenexa.com/images/flight-icon.png);background-repeat: no-repeat;background-size:20px;background-position: 4%;padding-left: 35px;text-transform:uppercase;}
+#FormControlSelect2 {background-image: url(https://farenexa.com/images/adult.png);background-repeat: no-repeat;background-size: 15%;background-position: 4% 50%;padding-left: 30px;}
+#FormControlSelect3 {background-image: url(https://farenexa.com/images/seat.png);background-repeat: no-repeat;background-size: 15%;background-position: 4% 50%;padding-left: 30px;}
+
+select.form-control {font-size: 15px;font-weight: 500;height:35px;border: none;background:none;}
+
+#FormControlInput3, #FormControlInput2, #FormControlInput1 {background-repeat: no-repeat;background-position:0;padding-left:25px;outline:none;font-size:14px; font-weight:500;}
+#FormControlInput1 {padding-left:35px;background: url(https://farenexa.com/images/location-icon.png) no-repeat 10px 12px;outline:none;}
+#FormControlInput2 {padding-left:40px;background: url(https://farenexa.com/images/location-icon.png) no-repeat 15px 12px;outline:none;}
+
+.NumberofTraveler {width: 180px !important; padding-left: 37px;padding-right: 25px;background:none;border: none;text-transform: uppercase;background-image: url(https://farenexa.com/images/traveller-icon.png), url(https://farenexa.com/images/traveller-arrow.png); background-repeat: no-repeat, no-repeat;background-position: 1% 40%, right 7px center;background-size:20px, 9px;outline:none;}
+
+.flight-row .sFromTbox {width: 100%;height: auto;padding: 12px 7px 12px 35px;margin: auto;background: url(https://farenexa.com/images/location-icon.png) no-repeat center left; border: none;outline:none;}
+.flight-row .sToTbox {width: 100%;height: auto;padding: 12px 7px 12px 35px;margin: auto;background: url(https://farenexa.com/mages/location-icon.png) no-repeat center left;border: none;outline:none;}
+.search-reverse {width: 25px;height: auto;padding: 0; margin: auto;}
+.search-reverse img {width: 100%;height: auto;}
+.flight-row .sDepartDTbox {width: 100%;height: auto;padding: 12px 7px 12px 30px;margin: auto;background: url(https://farenexa.com/images/calander-icon.png) no-repeat center left;border: none;outline:none;font-size:14px; font-weight:500;}
+.flight-row .sRerurnDTbox {width: 100%;height: auto;padding: 12px 7px 12px 30px;margin: auto;background: url(https://farenexa.com/images/calander-icon.png) no-repeat center left;border: none;outline:none;font-size:14px; font-weight:500;}
+.flight-row .sf_button{width:100%;height:auto;padding:16px 15px; margin:2px auto 0 auto;background:#ff6b00; border-radius:10px;font-size: 16px;color:#fff;border:none;font-weight:500;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s !important;}
+.flight-row .sf_button:hover{background:#006ba8;cursor:pointer;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s;-o-transition: all 0.3s;transition: all 0.3s !important;}
+.flight-row .sf_button .fa{position:relative;top:3px; left:-5px;}
+
+.adult {width: auto;padding: 10px 10px 0px 10px;background: #fff;border: solid 1px #e1e1e1; border-radius: 3px;display: none;position: absolute;z-index:2;}
+.traveler-label {margin: 0 0 0 0;font-size: 13px;font-weight: 400;}
+.sliderbox .btn {transition: all 0.4s ease-in-out;background-color: #ff3600;padding: 5px 12px;}
+.sliderbox .btn:hover {background-color: #017fce;color: #fff;}
+
+.ntravellers {width:60px;padding: 0 0 0 25px;margin: 0 5px  0 0; border:solid 1px #e1e1e1;}
+.qtyminus{width:40px;padding:0 !important;margin:0 5px 0 0;color: #fff;background:#218eec;}
+.qtyminus1{width:40px;padding:0 !important;margin:0 5px 0 0;color: #fff;background:#218eec;}
+.qtyminus2{width:40px;padding:0 !important;margin:0 5px 0 0;color: #fff;background:#218eec;}
+.qtyplus{width:40px;padding:0 !important;color: #fff;background:#218eec;}
+.qtyplus1{width:40px;padding:0 !important;color: #fff;background:#218eec;}
+.qtyplus2{width:40px;padding:0 !important;color: #fff;background:#218eec;}
+.bootstrap-touchspin{margin:0 0 2px 0;}
+.closedropdown{font-size:13px;}
+
+.ipt3 {padding-left: 30px; padding-right: 25px; background-image: url(https://farenexa.com/images/class-icon.png) !important; background-repeat: no-repeat !important;background-position:0 center !important;background-size: 20px !important;outline:none;}
+
+#search-box{padding: 30px;border: #a8d4b1 1px solid;border-radius:4px;}
+
+
+/* ----- Country Listing ----- */
+#country-list{padding:0;width:300px;margin-top:60px;position: absolute;left: 0px;float:left;list-style:none;max-height: 300px;overflow-y: scroll;}
+#country-list1{padding:0;width:300px;margin-top:60px;position: absolute;left: -1px;float:left;list-style:none;max-height: 300px;overflow-y: scroll;}
+#country-list li{padding: 3px; background: #f0f0f0; border-bottom: #f1f1f1 1px solid;}
+#country-list li:hover{background:#f7f7f7;cursor: pointer;}
+.ui-menu .ui-menu-item-wrapper {position: relative;padding: 3px 1em 3px .4em;}
+.ui-autocomplete{float:left;list-style:none;padding:0;width:380px;position: absolute;margin-top: 30px;left: -24px;    max-height: 300px;overflow-y: scroll;}
+.ui-menu .ui-menu-item {padding: 3px; background: #f0f0f0; border-bottom: #f1f1f1 1px solid;}
+.ui-menu .ui-menu-item :hover{background:#f7f7f7;cursor: pointer;}
+
+.ui-menu .ui-menu-item-wrapper {position: relative;padding: 3px 1em 3px .4em;}
+.select-airport {font: normal 17px Arial;color: #000;margin-top: 2px;}
+.ui-autocomplete {position: absolute;top: 0;left: 0;cursor: default;}
+.select-city {font: normal 12px Arial; color: #218eec;margin-top: 1px;}
+.select-icon {color: #218eec;margin-top: 6px;font: normal 14px Arial;}
+
+.fsrow {padding-top: 7px;padding-bottom: 7px;margin: 0px;background: #fff;}
+.fsrow:hover {padding-top: 7px;padding-bottom: 7px;margin: 0px;background: #f7f7f7;}
+.fs-col1 {width: 20%;height: auto;padding: 0;margin: 0;float: left;}
+.fs-col2 {width: 60%;height: auto;padding: 0;margin: 0;float: left;}
+.fs-col3 {width: 20%;height: auto;padding: 0;margin: 0; float: left;}
+.ui-menu .ui-menu-item {padding: 0px;background: #f0f0f0;border-bottom: #f1f1f1 1px solid;}
+.ui-menu .ui-menu-item {padding: 0px !important;background: #f0f0f0;border-bottom: #f1f1f1 1px solid;}
+.ui-autocomplete {float: left;list-style: none;padding: 0;width: 380px;position: absolute;margin-top: 30px;left: -24px;max-height: 285px;overflow-y: scroll;}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+.search-panel {width: 100%;height: auto;padding: 0 2%;margin: auto;}
+.flight-row .sf_button {width: 100%;height: auto;padding:17px 10%;margin: 2px auto 0 auto;font-size: 14px;}
+.desktop_ticket {bottom: -96px;}
+}
+
+@media (min-width:481px) and (max-width: 993px){
+.desktop_ticket{display:none;}
+.mobile_ticket{display:block;}
+
+
+.search-fly {position:relative;margin-top: -20px;padding: 20px;box-shadow: 0px 0px 42px -19px rgba(0, 0, 0, 0.40);background-color: #fff; border-radius: 10px;z-index:1;}
+.form_sec {background:#fff;width: 100%;padding: 8px 0px;border-radius:0;}
+.tab-content {padding:15px;}
+.search-fly .form-group {width: 100%;border-bottom: solid 1px #f1f1f1;padding: 0 0 7px 0;margin: 0 0 10px 0;}
+
+.search-from {width: 50%;height: 50px;padding: 0;margin: auto;float: left;position:relative;}
+.search-reverse {display:none;width: 10%;height: auto;padding: 0;margin: auto;float: left;text-align: center;}
+.mobile_ticket .search-fly .form-group {text-align: left;}
+.search-reverse img {width: 25px;height: auto;margin:22px 0 8px 0;}
+.my-1 {display:none;}
+
+.search-from1 {width: 50%;height: auto;padding: 0;margin: auto;float: left;position: relative;}
+.search-label-top {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;}
+.search-label-topr {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;text-align: right;}
+
+.search-label-top1 {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;}
+.search-label-topr1 {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;text-align: right;}
+.search-location-tboxr1{text-align:right;}
+
+select.form-control1 {background: #fff !important;}
+.mobile_ticket .form-control {width: 100%;padding: .375rem 0; border: none !important;background:none;}
+
+.hasDatepicker {padding-left: 0;background-image: none !important;}
+.NumberofTraveler {width: 90% !important;padding-left: 0; padding-right: 0px;margin: 0 0 0 10%;border: none;background:#fff url(https://farenexa.com/images/traveller-arrow.png) no-repeat!important; background-position:95% center !important;background-size: 9px;}
+.ipt5{height: 35px !important;padding: 0px !important;background:#fff !important;}
+.search-cal-tboxr {width: 100%;height: auto;padding: 4px 0 0 0;margin: auto; background: none;text-align: right;}
+.search-location-tboxr {width: 100% !important;height: auto;padding: 4px 0;margin: 0 auto 5px auto;background: none;text-align: right;}
+.fs-btn {width: 100%;height: 50px;color: #fff;background:#ff6b00;font-size: 18px;font-weight: 600;}
+.fs-btn:hover {width: 100%;height: 50px;color: #fff;background:#006ba8;}
+.fs-btn .fa{margin: 3px 10px 0 0;}
+}
+.sb-bottom-border{display:none;}
+@media (min-width:300px) and (max-width: 481px){
+.desktop_ticket{display:none;}
+.mobile_ticket{display:block;}
+
+
+.search-fly {position:relative;margin-top: -20px;padding: 20px;box-shadow: 0px 0px 42px -19px rgba(0, 0, 0, 0.40);background-color: #fff; border-radius: 10px;z-index:1;}
+.form_sec {background:#fff;width: 100%;padding: 8px 0px;border-radius:0;}
+.tab-content {padding:15px;}
+.search-fly .form-group {width: 100%;border-bottom: solid 1px #f1f1f1;padding: 0 0 7px 0;margin: 0 0 10px 0;}
+
+.search-from {width: 100%;height: auto;padding: 0;margin: auto;float: left;position:relative;}
+.search-reverse {display:none;width: 100%;padding: 0 0 7px 0;margin: 0 auto 12px auto;border-bottom:solid 1px #f1f1f1;float: left;text-align: center;}
+.mobile_ticket .search-fly .form-group {text-align: left;}
+.search-reverse img {width: 25px;height: auto;margin:22px 0 8px 0;}
+.my-1 {display:none;}
+
+.sb-bottom-border{display:block;width:100%;height:auto;padding:0;margin:5px auto 10px auto;border-bottom: solid 1px #f1f1f1;}
+.search-from1 {width:50%;height: auto;padding: 0;margin: auto;float: left;position: relative;}
+.search-label-top {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;}
+.search-label-topr {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;text-align: right;}
+.search-label-top1 {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;}
+.search-label-topr1 {width: 100%;height: auto;padding: 0;margin: auto;font-size: 13px;color: #999;text-align: left;}
+
+
+select.form-control1 {background: #fff !important;}
+.mobile_ticket .form-control {width: 100%;padding: .375rem 0; border: none !important;background:none;}
+
+.hasDatepicker {padding-left: 0;background-image: none !important;}
+.NumberofTraveler {width: 90% !important;padding-left: 0; padding-right: 0px;margin: 0 0 0 10%;border: none;background:#fff url(https://farenexa.com/images/traveller-arrow.png) no-repeat!important; background-position:95% center !important;background-size: 9px;}
+.ipt5{height: 35px !important;padding: 0px !important;background:#fff !important;}
+.search-cal-tboxr {width: 100%;height: auto;padding: 4px 0 0 0;margin: auto; background: none;text-align: right;}
+.search-location-tboxr {width: 100% !important;height: auto;padding: 4px 0;margin: 0 auto 5px auto;background: none;text-align: right;}
+.fs-btn {width: 100%;height: 50px;color: #fff;background:#ff6b00;font-size: 21px;font-weight: 600;}
+.fs-btn:hover {width: 100%;height: 50px;color: #fff;background:#006ba8;}
+.fs-btn .fa{margin: 3px 10px 0 0;}
+}
+@media (min-width:481px) and (max-width: 993px){
+.form-inline label {display: inline-block !important;}
+.suggesstion-boxs{position:relative;}
+.suggesstion-box{position:absolute;right:300px;}
+#country-list {max-height: 285px !important;margin-top: 0px !important;left: 0px !important;}
+#country-list1 {max-height: 285px !important;margin-top: 0px !important;left: -70% !important;top: -5px !important;}
+
+.adult {width:200px;border: solid 1px #e1e1e1; border-radius: 3px;right: 0px;}
+.adult strong{font-size:14px;}
+.traveller-tb {width:77px;margin:0 10px 0 5px;text-align: center; border: solid 1px #a1a1a1; border-radius:3px;}
+
+}
+@media (min-width:390px) and (max-width: 481px){
+.suggesstion-boxs{position:relative;}
+.suggesstion-box{position:absolute;right:300px;}
+#country-list {max-height: 225px !important;margin-top: 0px !important;left: -4px !important;}
+#country-list1 {max-height: 225px !important;margin-top: 0px !important;left: -20px !important;top: -5px !important;}
+
+.adult {width:200px;border: solid 1px #e1e1e1; border-radius: 3px;right: 0px;}
+.adult strong{font-size:14px;}
+.traveller-tb {width:77px;margin:0 10px 0 5px;text-align: center; border: solid 1px #a1a1a1; border-radius:3px;}
+}
+@media (min-width:300px) and (max-width: 390px){
+.suggesstion-boxs{position:relative;}
+.suggesstion-box{position:absolute;right:300px;}
+#country-list {width: 300px !important;max-height: 200px !important;margin-top: 0px !important;left: -16px !important;}
+#country-list1 {width: 300px !important;max-height: 200px !important;margin-top: 0px !important;left: 5px !important;top: -5px !important;}
+
+.adult {width:200px;border: solid 1px #e1e1e1; border-radius: 3px;right: 0px;}
+.adult strong{font-size:14px;}
+.traveller-tb {width:77px;margin:0 10px 0 5px;text-align: center; border: solid 1px #a1a1a1; border-radius:3px;}
+}
+.socialMedia{display:block;}
+.header-email{display:inline-block;}
+@media (min-width:300px) and (max-width: 769px){
+.socialMedia{display:none;}
+.header-email{display:none;}
+}

@@ -1,0 +1,501 @@
+/* ========================================================= 
+   FARE TIER SELECTION MODAL CSS (EXACT SCREENSHOT THEME)
+========================================================= */
+
+.fare-tier-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100vw;
+    background: rgba(15, 23, 42, 0.72);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 9999999;
+    padding: 70px 16px 40px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    animation: fadeInModal 0.25s ease-out;
+}
+
+@keyframes fadeInModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fare-tier-modal-container {
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 960px;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    margin: 0 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 25px 60px -12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    animation: slideUpModal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    border: 1px solid #e2e8f0;
+    box-sizing: border-box;
+}
+
+@keyframes slideUpModal {
+    from {
+        transform: translateY(24px) scale(0.98);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* ========================================================= 
+   MODAL HEADER
+========================================================= */
+
+.fare-tier-modal-header {
+    padding: 26px 32px 20px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #ffffff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.fare-tier-header-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.fare-tier-header-info h2 {
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0;
+    letter-spacing: -0.3px;
+    line-height: 1.25;
+}
+
+.fare-tier-route-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.fare-route-dash {
+    flex: 1;
+    max-width: 160px;
+    height: 1px;
+    border-top: 1.5px dashed #cbd5e1;
+}
+
+.fare-route-plane {
+    color: #0f4c5c;
+    font-size: 13px;
+    transform: rotate(90deg);
+}
+
+.fare-tier-close-btn {
+    background: #f3f4f6;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #6b7280;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.fare-tier-close-btn:hover {
+    background: #e5e7eb;
+    color: #111827;
+    transform: rotate(90deg);
+}
+
+/* ========================================================= 
+   3-TIER GRID
+========================================================= */
+
+.fare-tier-grid {
+    padding: 30px 28px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    background: #ffffff;
+    align-items: stretch;
+}
+
+.fare-tier-card {
+    position: relative;
+    background: #ffffff;
+    border: 1.5px solid #e5e7eb;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    overflow: visible;
+}
+
+.fare-tier-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Borders */
+.card-basic {
+    border-color: #e5e7eb;
+}
+
+.card-classic {
+    border-color: #b45309;
+    border-width: 2px;
+    box-shadow: 0 8px 24px rgba(180, 83, 9, 0.12);
+}
+
+.card-flex {
+    border-color: #0f4c5c;
+    border-width: 2px;
+}
+
+/* ========================================================= 
+   TOP BADGES
+========================================================= */
+
+.fare-tier-top-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 3px 14px;
+    border-radius: 20px;
+    letter-spacing: 0.6px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: 5;
+}
+
+.badge-classic {
+    background: #b45309;
+    box-shadow: 0 3px 8px rgba(180, 83, 9, 0.4);
+}
+
+.badge-flex {
+    background: #0f4c5c;
+    box-shadow: 0 3px 8px rgba(15, 76, 92, 0.4);
+}
+
+/* ========================================================= 
+   CARD HEADER BOXES (SCREENSHOT PALETTES)
+========================================================= */
+
+.fare-tier-card-header {
+    padding: 18px 16px 14px;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    color: #ffffff;
+}
+
+/* 1. Basic Header (Dark Charcoal Grey) */
+.header-basic {
+    background: #374151;
+}
+
+/* 2. Classic Header (Dark Charcoal Bronze) */
+.header-classic {
+    background: #38322e;
+}
+
+/* 3. Flex Header (Dark Teal / Forest Slate) */
+.header-flex {
+    background: #0f4c5c;
+}
+
+.fare-tier-name {
+    font-size: 1.15rem;
+    font-weight: 800;
+    margin: 0 0 3px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.fare-tier-sub {
+    font-size: 0.76rem;
+    color: #e5e7eb;
+    margin: 0;
+    font-weight: 400;
+    opacity: 0.95;
+    line-height: 1.25;
+}
+
+/* ========================================================= 
+   PRICE SECTION
+========================================================= */
+
+.fare-tier-price-section {
+    padding: 16px 16px 12px;
+    text-align: center;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.fare-tier-price-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 2px;
+}
+
+.fare-currency {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #111827;
+}
+
+.currency-classic {
+    color: #b45309;
+}
+
+.fare-amount {
+    font-size: 1.85rem;
+    font-weight: 900;
+    color: #111827;
+    letter-spacing: -0.5px;
+}
+
+.amount-classic {
+    color: #b45309;
+}
+
+.fare-per-person {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-left: 4px;
+    font-weight: 500;
+}
+
+/* ========================================================= 
+   PERKS LIST (GREEN CHECKS & RED CROSSES)
+========================================================= */
+
+.fare-tier-perks-list {
+    list-style: none;
+    padding: 16px 18px 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    flex: 1;
+}
+
+.perk-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.82rem;
+    line-height: 1.35;
+}
+
+.perk-symbol {
+    font-size: 0.95rem;
+    font-weight: 900;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.symbol-check {
+    color: #16a34a;
+}
+
+.symbol-cross {
+    color: #dc2626;
+}
+
+.perk-included .perk-label {
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.perk-excluded .perk-label {
+    color: #4b5563;
+    font-weight: 500;
+}
+
+/* ========================================================= 
+   SELECT BUTTONS (SCREENSHOT STYLES)
+========================================================= */
+
+.fare-tier-card-footer {
+    padding: 0 18px 18px;
+    margin-top: auto;
+}
+
+.fare-tier-select-btn {
+    width: 100%;
+    padding: 11px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. Basic Button: Medium Slate Grey */
+.btn-basic {
+    background: #6b7280;
+}
+
+.btn-basic:hover {
+    background: #4b5563;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(75, 85, 99, 0.25);
+}
+
+/* 2. Classic Button: Dark Teal / Forest Green */
+.btn-classic {
+    background: #0f4c5c;
+}
+
+.btn-classic:hover {
+    background: #0b3844;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(15, 76, 92, 0.35);
+}
+
+/* 3. Flex Button: Dark Charcoal */
+.btn-flex {
+    background: #374151;
+}
+
+.btn-flex:hover {
+    background: #1f2937;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(31, 41, 55, 0.3);
+}
+
+/* ========================================================= 
+   MODAL FOOTER
+========================================================= */
+
+.fare-tier-modal-footer {
+    padding: 12px 28px;
+    border-top: 1px solid #f3f4f6;
+    background: #fafafa;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.fare-tier-modal-footer span {
+    font-size: 0.76rem;
+    color: #6b7280;
+}
+
+/* ========================================================= 
+   RESPONSIVE (TABLET & MOBILE)
+========================================================= */
+
+@media (max-width: 840px) {
+    .fare-tier-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 16px;
+    }
+
+    .fare-tier-modal-header {
+        padding: 18px 20px 14px;
+    }
+
+    .fare-tier-modal-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .fare-tier-route-line {
+        flex-wrap: wrap;
+    }
+
+    .fare-route-dash {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .fare-tier-modal-overlay {
+        padding: 45px 8px 25px;
+        align-items: flex-start;
+    }
+
+    .fare-tier-modal-container {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 14px;
+        max-height: none;
+        margin: 0;
+    }
+
+    .fare-tier-modal-header {
+        padding: 14px 14px 10px;
+    }
+
+    .fare-tier-modal-header h2 {
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+
+    .fare-tier-route-line {
+        font-size: 0.78rem;
+        gap: 6px;
+    }
+
+    .fare-tier-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px 10px;
+    }
+
+    .fare-tier-card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .fare-tier-modal-footer {
+        padding: 10px 12px;
+    }
+}

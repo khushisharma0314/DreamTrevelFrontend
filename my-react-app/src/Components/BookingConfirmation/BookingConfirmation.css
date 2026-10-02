@@ -1,0 +1,1202 @@
+/* =========================================================
+   BOOKING CONFIRMATION PAGE
+========================================================= */
+
+.confirmation-page {
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.30),
+            rgba(255, 255, 255, 0.30)),
+        url("../../assets/confirm.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 110px 20px 80px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.confirmation-container {
+    width: 96%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SUCCESS HEADER CARD
+========================================================= */
+
+.success-header-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+
+    padding: 40px 190px 40px 30px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.success-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+========================================================= */
+
+.success-tick-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80px;
+    height: 80px;
+
+    background: #ecfdf5;
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+.success-header-card h1 {
+    margin: 0 0 10px;
+
+    color: #0f172a;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.sub-pnr-text {
+    color: #64748b;
+    font-size: 15px;
+
+    max-width: 600px;
+
+    margin: 0 auto 24px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   PNR
+========================================================= */
+
+.pnr-highlight-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #f0fdf4;
+
+    border: 1px dashed #22c55e;
+    border-radius: 12px;
+
+    padding: 14px 40px;
+}
+
+.pnr-highlight-box span {
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #166534;
+
+    letter-spacing: 0.5px;
+}
+
+.pnr-highlight-box strong {
+    font-size: 32px;
+    color: #15803d;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================================
+   DOWNLOAD BUTTON - TOP RIGHT
+========================================================= */
+
+.confirmation-download-wrapper {
+    position: absolute;
+
+    top: 50%;
+    right: 25px;
+
+    transform: translateY(-50%);
+
+    width: 155px;
+}
+
+.confirm-download-btn {
+    width: 100%;
+    min-height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 12px;
+
+    background: #22c55e;
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 11px;
+
+    line-height: 1.25;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(34, 197, 94, 0.30);
+
+    transition: 0.2s ease;
+}
+
+.confirm-download-btn:hover {
+    background: #16a34a;
+
+    box-shadow:
+        0 6px 18px rgba(34, 197, 94, 0.40);
+}
+
+.confirm-download-btn:active {
+    transform: translateY(1px);
+}
+
+.download-icon {
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   DETAILS GRID
+========================================================= */
+
+.confirmation-details-grid {
+    display: grid;
+
+    grid-template-columns: 2fr 1fr;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+.confirm-left-column {
+    min-width: 0;
+}
+
+.confirm-right-column {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SECTION CARDS
+========================================================= */
+
+.confirm-section-card {
+    background: rgba(255, 255, 255, 0.88);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 16px;
+
+    padding: 24px 30px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 24px;
+
+    text-align: left;
+}
+
+.confirm-section-card h3 {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+    color: #0f172a;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    padding-bottom: 10px;
+}
+
+
+/* =========================================================
+   FLIGHT CONFIRMATION
+========================================================= */
+
+.confirm-flight-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.return-confirm-block {
+    margin-top: 24px;
+
+    border-top: 1px dashed #e2e8f0;
+
+    padding-top: 24px;
+}
+
+.confirm-flight-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.confirm-badge {
+    font-size: 9px;
+    font-weight: 700;
+
+    border-radius: 4px;
+
+    padding: 3px 6px;
+}
+
+.confirm-badge.departure {
+    background: #fff7ed;
+    color: #FB923C;
+}
+
+.confirm-badge.return {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.confirm-flight-header strong {
+    font-size: 15px;
+    color: #1e293b;
+}
+
+
+/* =========================================================
+   ROUTE / TIME
+========================================================= */
+
+.confirm-route-times {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border-radius: 12px;
+
+    padding: 16px 20px;
+
+    gap: 10px;
+}
+
+.time-location {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    flex: 1;
+}
+
+.time-location:first-child {
+    text-align: left;
+}
+
+.time-location:last-child {
+    text-align: right;
+}
+
+.time-location strong {
+    font-size: 20px;
+    color: #0f172a;
+}
+
+.time-location span {
+    font-size: 12px;
+
+    color: #64748b;
+
+    font-weight: 600;
+}
+
+.direction-line {
+    flex: 1.2;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 4px;
+}
+
+.direction-line span {
+    font-size: 11px;
+
+    color: #64748b;
+}
+
+.line-bar {
+    position: relative;
+
+    width: 80%;
+
+    height: 1px;
+
+    background: #cbd5e1;
+
+    color: #FB923C;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 12px;
+}
+
+.confirm-date-row {
+    font-size: 13px;
+
+    color: #475569;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PASSENGERS TABLE
+========================================================= */
+
+.passengers-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+.passengers-table {
+    width: 100%;
+
+    min-width: 600px;
+
+    border-collapse: collapse;
+
+    text-align: left;
+}
+
+.passengers-table th {
+    font-size: 13px;
+
+    color: #64748b;
+
+    font-weight: 600;
+
+    padding: 10px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    white-space: nowrap;
+}
+
+.passengers-table td {
+    font-size: 14px;
+
+    color: #334155;
+
+    padding: 12px 10px;
+
+    border-bottom: 1px solid #f8fafc;
+
+    vertical-align: middle;
+}
+
+.passengers-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.p-type-badge {
+    display: inline-block;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    background: #f1f5f9;
+
+    color: #475569;
+
+    padding: 3px 6px;
+
+    border-radius: 4px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SELECTED SERVICES
+========================================================= */
+
+.confirmation-services {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.confirmation-service-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    font-size: 13px;
+
+    color: #475569;
+}
+
+.confirmation-service-row:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.confirmation-service-row strong {
+    color: #0f172a;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SEAT ASSIGNMENT
+========================================================= */
+
+.confirmation-seat-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.confirmation-seat-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 11px 0;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    color: #475569;
+
+    font-size: 13px;
+}
+
+.confirmation-seat-row:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+}
+
+.confirmation-seat-row>strong {
+    color: #0f172a;
+
+    font-size: 13px;
+}
+
+.confirmation-seat-row>div {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 4px;
+}
+
+.confirmation-seat-row b {
+    color: #FB923C;
+}
+
+
+/* =========================================================
+   BACK TO HOMEPAGE
+========================================================= */
+
+.confirm-home-btn {
+    width: 100%;
+
+    height: 52px;
+
+    background: #FB923C;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    font-size: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 14px rgba(251, 146, 60, 0.30);
+
+    transition: 0.2s ease;
+
+    margin-top: -8px;
+
+    margin-bottom: 24px;
+}
+
+.confirm-home-btn:hover {
+    background: #ea580c;
+
+    box-shadow:
+        0 6px 18px rgba(249, 115, 22, 0.40);
+}
+
+.confirm-home-btn:active {
+    transform: translateY(1px);
+}
+
+
+/* =========================================================
+   RIGHT COLUMN
+========================================================= */
+
+.confirm-summary-card {
+    background: rgba(255, 255, 255, 0.90);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255, 255, 255, 0.85);
+
+    border-radius: 16px;
+
+    padding: 24px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.06);
+
+    margin-bottom: 24px;
+
+    text-align: left;
+}
+
+.confirm-summary-card h3 {
+    margin: 0 0 16px;
+
+    font-size: 15px;
+
+    color: #0f172a;
+
+    font-weight: 700;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    padding-bottom: 10px;
+}
+
+
+/* =========================================================
+   PAYMENT ROW
+========================================================= */
+
+.payment-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    font-size: 13px;
+
+    color: #475569;
+
+    margin-bottom: 12px;
+
+    align-items: flex-start;
+}
+
+.payment-row:last-child {
+    margin-bottom: 0;
+}
+
+.payment-row span:last-child,
+.payment-row strong {
+    text-align: right;
+}
+
+.status-confirmed {
+    font-size: 10px !important;
+
+    font-weight: 700;
+
+    color: #15803d !important;
+
+    background: #dcfce7;
+
+    padding: 4px 9px;
+
+    border-radius: 12px;
+
+    white-space: nowrap;
+}
+
+.payment-row strong {
+    font-size: 19px;
+
+    color: #FB923C;
+}
+
+
+/* =========================================================
+   PRICE DIVIDER
+========================================================= */
+
+.confirmation-price-divider {
+    height: 1px;
+
+    background: #f1f5f9;
+
+    margin: 15px 0;
+}
+
+.confirmation-final-price {
+    margin-bottom: 0;
+}
+
+.confirmation-final-price strong {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   SUPPORT CARD
+========================================================= */
+
+.support-card p {
+    font-size: 13px;
+
+    color: #475569;
+
+    line-height: 1.5;
+
+    margin: 0 0 12px;
+}
+
+.support-phone {
+    font-size: 18px;
+
+    color: #FB923C;
+
+    margin-bottom: 4px;
+}
+
+.support-sub {
+    font-size: 11px !important;
+
+    color: #94a3b8 !important;
+
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   ERROR / SESSION EXPIRED
+========================================================= */
+
+.confirmation-error-card {
+    max-width: 500px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 16px;
+
+    padding: 40px;
+
+    margin: 60px auto;
+
+    text-align: center;
+
+    box-shadow:
+        0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.confirmation-error-card h2 {
+    color: #ef4444;
+
+    margin: 0 0 10px;
+
+    font-size: 22px;
+}
+
+.confirmation-error-card p {
+    color: #64748b;
+
+    margin: 0 0 24px;
+
+    line-height: 1.5;
+}
+
+.confirmation-error-card button {
+    height: 48px;
+
+    padding: 0 30px;
+
+    background: #FB923C;
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.confirmation-error-card button:hover {
+    background: #ea580c;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .confirmation-page {
+        padding: 40px 18px 70px;
+
+        background-attachment: scroll;
+    }
+
+    .confirmation-container {
+        width: 100%;
+    }
+
+    .confirmation-details-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .confirm-right-column {
+        width: 100%;
+    }
+
+    .success-header-card {
+        margin-bottom: 25px;
+
+        padding-right: 30px;
+    }
+
+    .confirmation-download-wrapper {
+        position: static;
+
+        transform: none;
+
+        width: 100%;
+
+        display: flex;
+
+        justify-content: center;
+
+        margin-top: 25px;
+    }
+
+    .confirm-download-btn {
+        width: auto;
+
+        min-width: 190px;
+
+        padding: 12px 18px;
+
+        font-size: 12px;
+    }
+
+    .confirm-section-card {
+        padding: 22px;
+    }
+
+    .confirm-summary-card {
+        padding: 22px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ONLY MOBILE STRUCTURE CHANGES HERE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .confirmation-page {
+        padding: 30px 12px 60px;
+
+        background-image: none !important;
+        background: #f8fafc !important;
+    }
+
+
+    /* =====================================================
+       SUCCESS HEADER
+    ===================================================== */
+
+    .success-header-card {
+        padding: 30px 18px;
+
+        border-radius: 16px;
+
+        margin-bottom: 20px;
+    }
+
+    .success-tick-icon {
+        width: 65px;
+
+        height: 65px;
+
+        margin-bottom: 15px;
+    }
+
+    .success-tick-icon svg {
+        width: 38px;
+
+        height: 38px;
+    }
+
+    .success-header-card h1 {
+        font-size: 23px;
+    }
+
+    .sub-pnr-text {
+        font-size: 13px;
+
+        margin-bottom: 20px;
+    }
+
+    .pnr-highlight-box {
+        padding: 12px 25px;
+    }
+
+    .pnr-highlight-box span {
+        font-size: 9px;
+    }
+
+    .pnr-highlight-box strong {
+        font-size: 25px;
+    }
+
+
+    /* =====================================================
+       DOWNLOAD BUTTON
+    ===================================================== */
+
+    .confirmation-download-wrapper {
+        margin-top: 22px;
+    }
+
+    .confirm-download-btn {
+        width: 100%;
+
+        min-height: 48px;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       MOBILE GRID
+       
+       IMPORTANT:
+       Desktop structure remains untouched.
+       On mobile we convert the grid into a single
+       vertical layout.
+    ===================================================== */
+
+    .confirmation-details-grid {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    /*
+       LEFT COLUMN CONTENT COMES FIRST
+       RIGHT COLUMN CONTENT COMES AFTER
+    */
+
+    .confirm-left-column {
+        display: contents;
+    }
+
+    .confirm-right-column {
+        display: contents;
+    }
+
+
+    /* =====================================================
+       SECTION
+    ===================================================== */
+
+    .confirm-section-card {
+        padding: 18px;
+
+        border-radius: 12px;
+
+        margin-bottom: 18px;
+    }
+
+    .confirm-section-card h3 {
+        font-size: 15px;
+
+        margin-bottom: 16px;
+    }
+
+
+    /* =====================================================
+       FLIGHT
+    ===================================================== */
+
+    .confirm-flight-header {
+        gap: 8px;
+    }
+
+    .confirm-flight-header strong {
+        font-size: 13px;
+    }
+
+    .confirm-route-times {
+        padding: 13px 10px;
+
+        gap: 5px;
+    }
+
+    .time-location strong {
+        font-size: 16px;
+    }
+
+    .time-location span {
+        font-size: 10px;
+    }
+
+    .direction-line {
+        flex: 1;
+    }
+
+    .direction-line span {
+        font-size: 9px;
+    }
+
+    .line-bar {
+        width: 90%;
+
+        font-size: 10px;
+    }
+
+    .confirm-date-row {
+        font-size: 11px;
+    }
+
+    .return-confirm-block {
+        margin-top: 18px;
+
+        padding-top: 18px;
+    }
+
+
+    /* =====================================================
+       PASSENGERS
+    ===================================================== */
+
+    .passengers-table {
+        min-width: 560px;
+    }
+
+    .passengers-table th {
+        font-size: 11px;
+
+        padding: 8px;
+    }
+
+    .passengers-table td {
+        font-size: 11px;
+
+        padding: 10px 8px;
+    }
+
+    .p-type-badge {
+        font-size: 8px;
+    }
+
+
+    /* =====================================================
+       SEATS
+    ===================================================== */
+
+    .confirmation-seat-row {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .confirmation-seat-row>div {
+        align-items: flex-start;
+    }
+
+
+    /* =====================================================
+       RIGHT SIDE CARDS
+    ===================================================== */
+
+    .confirm-summary-card {
+        padding: 18px;
+
+        border-radius: 12px;
+
+        margin-bottom: 18px;
+    }
+
+    .confirm-summary-card h3 {
+        font-size: 14px;
+    }
+
+    .payment-row {
+        font-size: 12px;
+
+        gap: 10px;
+    }
+
+    .payment-row strong {
+        font-size: 17px;
+    }
+
+    .status-confirmed {
+        font-size: 8px !important;
+
+        padding: 3px 7px;
+    }
+
+    .support-card p {
+        font-size: 12px;
+    }
+
+    .support-phone {
+        font-size: 16px;
+    }
+
+
+    /* =====================================================
+       BACK TO HOMEPAGE
+       
+       IMPORTANT:
+       Because both columns use display: contents,
+       this button remains after ALL confirmation cards
+       on mobile.
+    ===================================================== */
+
+    .confirm-home-btn {
+        display: block;
+
+        width: 100%;
+
+        height: 48px;
+
+        font-size: 13px;
+
+        margin-top: 2px;
+
+        margin-bottom: 18px;
+
+        order: 999;
+    }
+
+
+    /* =====================================================
+       ERROR CARD
+    ===================================================== */
+
+    .confirmation-error-card {
+        padding: 30px 20px;
+
+        margin: 40px auto;
+    }
+}

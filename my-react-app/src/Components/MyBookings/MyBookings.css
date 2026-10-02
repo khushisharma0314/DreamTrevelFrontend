@@ -1,0 +1,583 @@
+/* =====================================================
+   MY BOOKINGS PAGE
+   ===================================================== */
+
+.my-bookings-page {
+    min-height: 100vh;
+    background: #F8FAFC;
+    padding: 40px 20px 60px;
+}
+
+.my-bookings-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+.bookings-header {
+    margin-bottom: 28px;
+}
+
+.bookings-header h1 {
+    margin: 0 0 7px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.bookings-header p {
+    margin: 0;
+    color: #64748B;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   BOOKINGS LIST
+   ===================================================== */
+
+.bookings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* =====================================================
+   BOOKING CARD
+   ===================================================== */
+
+.booking-card {
+    background: #FFFFFF;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 5px 18px rgba(31, 41, 55, 0.05);
+    overflow: hidden;
+    padding: 24px 28px 20px;
+}
+
+
+/* =====================================================
+   FLIGHT SECTION
+   ===================================================== */
+
+.booking-flight-section {
+    padding-bottom: 20px;
+}
+
+.booking-flight-section+.booking-flight-section {
+    border-top: 1px solid #E2E8F0;
+    padding-top: 22px;
+}
+
+
+/* =====================================================
+   AIRLINE
+   ===================================================== */
+
+.booking-airline-row {
+    margin-bottom: 24px;
+}
+
+.booking-airline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.booking-airline strong {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.booking-airline span {
+    font-size: 15px;
+    color: #64748B;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   ROUTE
+   ===================================================== */
+
+.booking-route {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-airport {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.booking-airport:last-child {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.booking-airport strong {
+    font-size: 22px;
+    color: #1F2937;
+    font-weight: 700;
+}
+
+.booking-airport span {
+    font-size: 15px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   ROUTE MIDDLE
+   ===================================================== */
+
+.booking-route-middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.route-line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.route-line::before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #CBD5E1;
+}
+
+.route-line::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #FB923C;
+    border-right: 2px solid #FB923C;
+    transform: rotate(45deg);
+}
+
+.route-line span {
+    display: none;
+}
+
+.booking-duration {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.booking-stops {
+    font-size: 13px;
+    color: #64748B;
+}
+
+
+/* =====================================================
+   FLIGHT DATE
+   ===================================================== */
+
+.booking-flight-date {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   RETURN FLIGHT LABEL
+   ===================================================== */
+
+.flight-type-label {
+    display: inline-block;
+    margin-bottom: 17px;
+    padding: 5px 11px;
+    border-radius: 6px;
+    background: #FFF7ED;
+    color: #FB923C;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #FFEDD5;
+}
+
+
+/* =====================================================
+   LOADING FLIGHT
+   ===================================================== */
+
+.flight-loading {
+    padding: 18px 0;
+    color: #64748B;
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   EXTRA BOOKING DETAILS
+   ===================================================== */
+
+.booking-extra-details {
+    border-top: 1px solid #E2E8F0;
+    border-bottom: 1px solid #E2E8F0;
+    padding: 20px 0;
+    margin-top: 4px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.booking-detail-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail-icon {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    background: #FFF7ED;
+    color: #FB923C;
+
+    font-size: 15px;
+}
+
+.booking-detail-item div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.booking-detail-item small {
+    font-size: 11px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.booking-detail-item strong {
+    font-size: 14px;
+    color: #1F2937;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   TOTAL AMOUNT
+   ===================================================== */
+
+.booking-total-section {
+    padding: 18px 0 5px;
+}
+
+.booking-total-section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.booking-total-section span {
+    font-size: 13px;
+    color: #64748B;
+    font-weight: 500;
+}
+
+.booking-total-section strong {
+    font-size: 22px;
+    color: #1F2937;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+   ===================================================== */
+
+.booking-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+
+/* View / Hide Details */
+
+.view-details-btn {
+    min-width: 125px;
+    padding: 10px 17px;
+
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+
+    background: #FFFFFF;
+    color: #1F2937;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.view-details-btn:hover {
+    background: #F8FAFC;
+    border-color: #CBD5E1;
+}
+
+
+/* Download */
+
+.download-ticket-btn {
+    min-width: 135px;
+    padding: 10px 17px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #FB923C;
+    color: #FFFFFF;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.download-ticket-btn:hover {
+    background: #1F2937;
+    transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   NO BOOKINGS
+   ===================================================== */
+
+.no-bookings {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+
+    text-align: center;
+    padding: 60px 25px;
+
+    box-shadow: 0 5px 18px rgba(31, 41, 55, 0.05);
+}
+
+.no-bookings h2 {
+    margin: 0 0 10px;
+    color: #1F2937;
+    font-size: 22px;
+}
+
+.no-bookings p {
+    margin: 0 0 25px;
+    color: #64748B;
+    font-size: 14px;
+}
+
+.no-bookings button {
+    padding: 11px 22px;
+    border: none;
+    border-radius: 8px;
+
+    background: #FB923C;
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.no-bookings button:hover {
+    background: #1F2937;
+}
+
+
+/* =====================================================
+   LOADING
+   ===================================================== */
+
+.bookings-loading {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 60px 20px;
+
+    text-align: center;
+
+    color: #64748B;
+    font-size: 15px;
+}
+
+
+/* =====================================================
+   ERROR
+   ===================================================== */
+
+.bookings-error {
+    background: #FFFFFF;
+    border-radius: 16px;
+    padding: 50px 25px;
+
+    text-align: center;
+    border: 1px solid #E2E8F0;
+}
+
+.bookings-error h2 {
+    margin: 0 0 10px;
+    color: #1F2937;
+}
+
+.bookings-error p {
+    margin: 0 0 22px;
+    color: #64748B;
+}
+
+.bookings-error button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+
+    background: #FB923C;
+    color: white;
+
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.bookings-error button:hover {
+    background: #1F2937;
+}
+
+
+/* =====================================================
+   RESPONSIVE - TABLET
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    .my-bookings-page {
+        padding: 28px 15px 45px;
+    }
+
+    .booking-card {
+        padding: 20px;
+    }
+
+    .booking-route {
+        grid-template-columns: 1fr 1.5fr 1fr;
+        gap: 12px;
+    }
+
+    .booking-airport strong {
+        font-size: 19px;
+    }
+
+    .booking-airport span {
+        font-size: 13px;
+    }
+
+    .booking-extra-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================================
+   RESPONSIVE - MOBILE
+   ===================================================== */
+
+@media (max-width: 550px) {
+
+    .my-bookings-page {
+        padding: 20px 10px 35px;
+    }
+
+    .bookings-header h1 {
+        font-size: 26px;
+    }
+
+    .booking-card {
+        padding: 17px;
+        border-radius: 12px;
+    }
+
+    .booking-airline strong {
+        font-size: 16px;
+    }
+
+    .booking-airline span {
+        font-size: 13px;
+    }
+
+    .booking-route {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .booking-airport {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .booking-airport:last-child {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .booking-route-middle {
+        order: 3;
+        width: 100%;
+        transform: rotate(90deg);
+        margin: 5px 0;
+    }
+
+    .booking-duration,
+    .booking-stops {
+        transform: rotate(-90deg);
+    }
+
+    .booking-extra-details {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .booking-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .view-details-btn,
+    .download-ticket-btn {
+        width: 100%;
+    }
+
+}
